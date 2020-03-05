@@ -1,0 +1,22 @@
+$root_font-size: 18px;
+
+$xxl_font-size: 3.444rem;
+$l_font-size: 1.3rem;
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("./../../assets/fonts/PTS55F.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("./../../assets/fonts/PTS75F.ttf");
+  font-weight: bold;
+}
+
+html {
+  font-family: "PT Sans";
+  font-size: $root_font-size;
+  color: $main-black;
+}

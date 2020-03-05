@@ -1,0 +1,18 @@
+nav {
+  position: absolute;
+  width: 100%;
+  padding: $margin 0;
+  background-color: $white-opacity;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+  }
+  img {
+    height: $big-margin * 1.2;
+  }
+  a {
+    margin-left: $big-margin;
+  }
+}

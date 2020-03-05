@@ -1,0 +1,41 @@
+$margin: 1.067rem;
+$small-margin: 0.3751 * $margin;
+$big-margin: 2 * $margin;
+
+$border: solid 0.1rem $main-black;
+$border-radius: 0.6666rem;
+
+a {
+  color: $main-black;
+  text-decoration: none;
+}
+
+// h1
+.title {
+  font-size: $xxl_font-size;
+  letter-spacing: -0.2px;
+  margin-top: $small-margin;
+  margin-bottom: $big-margin * 2.7;
+}
+
+h3,
+.hero-button {
+  font-size: $l_font-size;
+  letter-spacing: -0.1px;
+  font-weight: normal;
+}
+
+.button,
+.hero-button {
+  padding: $small-margin $margin;
+  border: $border;
+  border-radius: $border-radius;
+}
+.hero-button {
+  padding-left: $big-margin;
+  padding-right: $big-margin;
+  font-weight: bold;
+  border-color: $main-blue;
+  color: $main-blue;
+  font-size: $l_font-size;
+}

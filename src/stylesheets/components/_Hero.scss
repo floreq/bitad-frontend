@@ -1,0 +1,16 @@
+header {
+  text-align: center;
+  background-image: url("./../../assets/images/hero-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto 42.22rem;
+  padding-top: 7.39rem;
+  img {
+    height: 18.5rem;
+  }
+  h3 {
+    margin-top: $big_margin * 1.7;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+}
