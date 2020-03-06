@@ -1,9 +1,13 @@
 $margin: 1.067rem;
-$small-margin: 0.3751 * $margin;
-$big-margin: 2 * $margin;
+$smaller-margin: 0.3751 * $margin;
+$small-margin: $smaller-margin * 2;
+$big-margin: $margin * 2;
+$bigger-margin: $margin * 3;
 
-$border: solid 0.1rem $main-black;
+$border: solid 0.111rem $main-black;
 $border-radius: 0.6666rem;
+
+$box-shadow: 0px 12.4px 49.3px 0px rgba(0, 0, 0, 0.24);
 
 a {
   color: $main-black;
@@ -14,8 +18,23 @@ a {
 .title {
   font-size: $xxl_font-size;
   letter-spacing: -0.2px;
-  margin-top: $small-margin;
+  margin-top: $smaller-margin;
   margin-bottom: $big-margin * 2.7;
+}
+
+h1 {
+  font-size: 2.6rem;
+  letter-spacing: 0.045rem;
+  line-height: 1.18;
+  margin-top: 0;
+  margin-bottom: $margin;
+}
+
+h2 {
+  margin-top: $margin;
+  margin-bottom: 0;
+  font-weight: normal;
+  letter-spacing: 0.05rem;
 }
 
 h3,
@@ -25,12 +44,21 @@ h3,
   font-weight: normal;
 }
 
+p {
+  line-height: 1.9;
+}
+
 .button,
 .hero-button {
-  padding: $small-margin $margin;
+  padding: $smaller-margin $margin;
   border: $border;
   border-radius: $border-radius;
 }
+
+.button:hover {
+  border-color: $main-blue;
+}
+
 .hero-button {
   padding-left: $big-margin;
   padding-right: $big-margin;
@@ -38,4 +66,15 @@ h3,
   border-color: $main-blue;
   color: $main-blue;
   font-size: $l_font-size;
+}
+
+.shadow {
+  box-shadow: $box-shadow;
+}
+
+section {
+  a {
+    font-size: $m_font-size;
+    color: $main-blue;
+  }
 }

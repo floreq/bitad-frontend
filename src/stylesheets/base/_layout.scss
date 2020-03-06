@@ -1,7 +1,19 @@
-$max-width: 1400px;
+$max-width: 1208px;
 
 .container {
   margin: auto;
   max-width: $max-width;
   padding: 0 $margin;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: $big-margin * 2;
+}
+
+section {
+  overflow: hidden;
+  padding-bottom: $big-margin * 3;
+  padding-top: $big-margin * 2;
 }

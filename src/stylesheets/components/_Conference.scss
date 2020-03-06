@@ -1,0 +1,49 @@
+.center {
+  text-align: center;
+  img,
+  p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50rem;
+    width: 100%;
+  }
+  p {
+    margin-bottom: $bigger-margin;
+  }
+}
+
+.half-gray {
+  background: url(../../assets/images/blue-bg.svg),
+    url(../../assets/images/gray-bg.svg);
+  background-position: bottom left, top left;
+  background-size: 14.27rem auto, 50% auto;
+  background-repeat: no-repeat, repeat-y;
+  h1 {
+    text-align: center;
+  }
+  .half-right {
+    text-align: left;
+    position: relative;
+    left: 50%;
+    margin-left: $margin;
+    margin-bottom: $bigger-margin;
+  }
+}
+
+.image-container {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .bg {
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: -$big-margin * 2;
+    margin-right: -$big-margin * 2;
+    width: 67%;
+    height: 54%;
+    background-color: $main-blue;
+  }
+}
