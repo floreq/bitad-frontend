@@ -1,7 +1,7 @@
 .list-of-elements {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: $big-margin * 2;
+  gap: $big-margin * 2;
   text-align: center;
   .element {
     display: flex;
