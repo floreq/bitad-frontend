@@ -1,6 +1,4 @@
 .list-of-elements {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   gap: $big-margin * 2;
   text-align: center;
   .element {
@@ -11,12 +9,6 @@
     background-color: $white;
     img {
       height: 2.44rem;
-    }
-    p {
-      margin-top: $small-margin;
-      margin-bottom: $big-margin;
-      font-size: $m_font-size;
-      line-height: 1.6;
     }
   }
 }

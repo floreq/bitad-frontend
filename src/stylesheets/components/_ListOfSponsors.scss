@@ -9,10 +9,7 @@ $sponsors-margin: $margin + $small-margin;
     }
   }
   .sponsors {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     gap: $sponsors-margin;
-
     align-items: center;
   }
   img {

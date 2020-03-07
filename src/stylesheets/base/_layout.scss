@@ -17,3 +17,8 @@ section {
   padding-bottom: $big-margin * 3;
   padding-top: $big-margin * 2;
 }
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

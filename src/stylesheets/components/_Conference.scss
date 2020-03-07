@@ -15,29 +15,25 @@
 .half-gray {
   background: url(../../assets/images/blue-bg.svg),
     url(../../assets/images/gray-bg.svg);
-  background-position: bottom left, top left;
+  background-position: left bottom, left top;
   background-size: 14.27rem auto, 50% auto;
   background-repeat: no-repeat, repeat-y;
-  h1 {
-    text-align: center;
-  }
   .half-right {
     text-align: left;
     position: relative;
     left: 50%;
     margin-left: $margin;
-    margin-bottom: $bigger-margin;
   }
 }
 
-.helf-neutral {
+.half-neutral {
   background: url(../../assets/images/neutral-bg.svg);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 83.6rem;
 }
 
-.image-container {
+.image-border {
   position: relative;
   img {
     width: 100%;

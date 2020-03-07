@@ -14,6 +14,16 @@ a {
   text-decoration: none;
 }
 
+.nav-link {
+  margin-right: $big-margin;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    color: $main-blue;
+  }
+}
+
 // h1
 .title {
   font-size: $xxl_font-size;
@@ -45,7 +55,15 @@ h3,
 }
 
 p {
+  margin-top: 0;
   line-height: 1.9;
+}
+
+.small-p {
+  margin-top: $small-margin;
+  margin-bottom: $big-margin !important;
+  font-size: $m_font-size;
+  line-height: 1.6;
 }
 
 .button,
@@ -57,6 +75,7 @@ p {
 
 .button:hover {
   border-color: $main-blue;
+  color: $main-blue;
 }
 
 .hero-button {

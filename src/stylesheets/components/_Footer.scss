@@ -1,0 +1,16 @@
+footer {
+  padding-top: $big-margin * 2;
+  background: url("./../../assets/images/gray-white-bg.svg"), $main-lgray;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 85rem, auto;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $big-margin * 2;
+  }
+  h3 {
+    margin-top: 0;
+    margin-bottom: $margin;
+  }
+}

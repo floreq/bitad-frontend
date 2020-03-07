@@ -7,19 +7,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-flow: row nowrap;
   }
   img {
     height: $big-margin * 1.2;
-  }
-  a {
-    margin-right: $big-margin;
-    &:hover {
-      color: $main-blue;
-    }
-    &:last-child {
-      margin-right: 0;
-    }
   }
   .active {
     color: $main-blue;

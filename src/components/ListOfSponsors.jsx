@@ -14,7 +14,7 @@ function ListOfSponsors(props) {
     return (
       <React.Fragment key={e.id}>
         <h3>{e.title}</h3>
-        <div className="sponsors">{sponsors(e.id)}</div>
+        <div className="list sponsors">{sponsors(e.id)}</div>
       </React.Fragment>
     );
   });

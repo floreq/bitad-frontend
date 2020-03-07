@@ -1,0 +1,24 @@
+$size: 3.77rem;
+
+.list-of-organisers {
+  gap: $big-margin;
+  .organiser {
+    padding: $margin $big-margin;
+    .profile {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      p,
+      h3 {
+        margin: 0 !important;
+      }
+    }
+  }
+  .image-wrapper {
+    margin-right: $margin;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}

@@ -1,8 +1,9 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+import Footer from "../components/Footer";
 import ListOfElements from "../components/ListOfElements";
 import ListOfSponsors from "../components/ListOfSponsors";
+import ListOfOrganisers from "../components/ListOfOrganisers";
 import Lectures from "./../assets/images/lectures.jpg";
 import Workshop from "./../assets/images/workshop.jpg";
 
@@ -13,7 +14,7 @@ function Conference() {
       location: "/images/gift.svg",
       alt: "Prezent",
       title: "Powitalnej paczki",
-      text:
+      description:
         "Dlatego każdy z Was zaraz po potwierdzeniu swojej obecności na konferencji będzie czekała powitalna paczka.",
       fintOutMore: "/"
     },
@@ -22,7 +23,7 @@ function Conference() {
       location: "/images/keyboard.svg",
       alt: "Prezent",
       title: "Warsztatów",
-      text:
+      description:
         "Warsztaty mają na celu zaprezentowanie podstaw tematów będących na czasie w praktyce.",
       fintOutMore: "/"
     },
@@ -31,7 +32,7 @@ function Conference() {
       location: "/images/gamepad.svg",
       alt: "Prezent",
       title: "Gry QR Code",
-      text:
+      description:
         "Baw się z nami i zdobywaj punkty podczas udziału w prelekcjach i warsztatach. ",
       fintOutMore: "/"
     }
@@ -98,9 +99,65 @@ function Conference() {
       ]
     }
   ];
+  const listOrganisers = [
+    {
+      id: 1,
+      degree: "mgr inż.",
+      name: "Sebastian",
+      surname: "Kowalski",
+      description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
+      location: "/images/organisers/sebastian-kowalski.jpg",
+      alt: ""
+    },
+    {
+      id: 2,
+      degree: "mgr inż.",
+      name: "Sebastian",
+      surname: "Kowalski",
+      description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
+      location: "/images/organisers/sebastian-kowalski.jpg",
+      alt: ""
+    },
+    {
+      id: 3,
+      degree: "mgr inż.",
+      name: "Sebastian",
+      surname: "Kowalski",
+      description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
+      location: "/images/organisers/sebastian-kowalski.jpg",
+      alt: ""
+    },
+    {
+      id: 4,
+      degree: "mgr inż.",
+      name: "Sebastian",
+      surname: "Kowalski",
+      description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
+      location: "/images/organisers/sebastian-kowalski.jpg",
+      alt: ""
+    },
+    {
+      id: 5,
+      degree: "mgr inż.",
+      name: "Sebastian",
+      surname: "Kowalski",
+      description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
+      location: "/images/organisers/sebastian-kowalski.jpg",
+      alt: ""
+    },
+    {
+      id: 6,
+      degree: "mgr inż.",
+      name: "Sebastian",
+      surname: "Kowalski",
+      description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
+      location: "/images/organisers/sebastian-kowalski.jpg",
+      alt: ""
+    }
+  ];
+
   return (
     <React.Fragment>
-      <Navbar />
       <Hero />
       <main>
         <section>
@@ -125,7 +182,7 @@ function Conference() {
                 to, aby to piątkowe spotkanie.
               </p>
             </div>
-            <div className="image-container">
+            <div className="image-border">
               <img src={Lectures} className="shadow" alt="Wyklady" />
               <div className="bg"></div>
             </div>
@@ -151,7 +208,7 @@ function Conference() {
             <img src={Workshop} className="shadow" alt="Warsztaty" />
           </div>
         </section>
-        <section id="sponsors" className="helf-neutral">
+        <section id="sponsors" className="half-neutral">
           <div className="container two-columns">
             <div>
               <ListOfSponsors listSponsors={listSponsors} />
@@ -179,15 +236,18 @@ function Conference() {
           </div>
         </section>
         <section className="center">
-          <h1>Organizatorzy</h1>
-          <p>
-            {" "}
-            Jak i motywacji do jej dalszego poszerzania. Dodatkowo dbamy o to,
-            aby to piątkowe spotkanie było przede wszystkim. Mile spędzonym
-            czasem, dlatego wzbogaciliśmy konferencję o dodatkowe atrakcje.{" "}
-          </p>
+          <div className="container">
+            <h1>Organizatorzy</h1>
+            <p>
+              Jak i motywacji do jej dalszego poszerzania. Dodatkowo dbamy o to,
+              aby to piątkowe spotkanie było przede wszystkim. Mile spędzonym
+              czasem, dlatego wzbogaciliśmy konferencję o dodatkowe atrakcje.
+            </p>
+            <ListOfOrganisers listOrganisers={listOrganisers} />
+          </div>
         </section>
       </main>
+      <Footer />
     </React.Fragment>
   );
 }
