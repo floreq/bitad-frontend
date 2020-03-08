@@ -1,7 +1,13 @@
 import React from "react";
+import Footer from "../components/Footer";
 
 function Agenda() {
-  return <div>Test</div>;
+  return (
+    <React.Fragment>
+      Agenda
+      <Footer />
+    </React.Fragment>
+  );
 }
 
 export default Agenda;
