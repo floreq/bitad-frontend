@@ -155,7 +155,6 @@ function Conference() {
       alt: ""
     }
   ];
-
   return (
     <React.Fragment>
       <Hero />

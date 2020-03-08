@@ -1,0 +1,8 @@
+.list-of-patrons {
+  grid-template-columns: 4fr 6fr;
+  column-gap: $big-margin;
+  align-items: flex-start;
+  img {
+    height: 100%;
+  }
+}

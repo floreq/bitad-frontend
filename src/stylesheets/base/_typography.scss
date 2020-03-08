@@ -66,8 +66,13 @@ p {
   line-height: 1.6;
 }
 
+span {
+  font-size: $m_font-size;
+}
+
 .button,
 .hero-button {
+  display: inline-block;
   padding: $smaller-margin $margin;
   border: $border;
   border-radius: $border-radius;
