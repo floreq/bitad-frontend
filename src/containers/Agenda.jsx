@@ -1,10 +1,11 @@
 import React from "react";
+import SmallHero from "../components/SmallHero";
 import Footer from "../components/Footer";
 
 function Agenda() {
   return (
     <React.Fragment>
-      Agenda
+      <SmallHero />
       <Footer />
     </React.Fragment>
   );

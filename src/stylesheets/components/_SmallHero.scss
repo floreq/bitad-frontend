@@ -1,0 +1,17 @@
+.small-hero {
+  background-image: url("./../../assets/images/small-hero-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto 28.3rem;
+  padding-bottom: $big-margin * 3;
+  h3 {
+    margin-top: 0;
+  }
+  .title {
+    margin-top: $margin;
+    margin-bottom: $big-margin * 2;
+  }
+  img {
+    justify-self: flex-end;
+  }
+}

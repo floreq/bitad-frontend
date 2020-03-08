@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Hero() {
   return (
-    <header>
+    <header className="hero">
       <div className="container">
         <img src={BitadLogo} alt="Bitad logo" />
         <h3>20 marca 2020, na terenie uczelni ATH w Bielsku-Białej</h3>
