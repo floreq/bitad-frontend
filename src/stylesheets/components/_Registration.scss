@@ -1,0 +1,45 @@
+.registration {
+  padding-top: $bigger-margin * 2 + $smaller-margin;
+  background: url(../../assets/images/registration-bg.svg);
+  background-position: center top;
+  background-size: 85.27rem auto;
+  background-repeat: no-repeat;
+  .two-columns {
+    grid-template-columns: auto auto;
+  }
+  .introduction {
+    h1 {
+      margin-top: $small-margin;
+      margin-bottom: 0;
+    }
+    h3 {
+      margin: 0;
+    }
+  }
+
+  form {
+    margin-top: $big-margin;
+    label {
+      margin-right: $margin;
+      margin-bottom: $margin;
+      display: inline-block;
+    }
+    input {
+      line-height: 1.5;
+      margin-top: $smaller-margin;
+      padding: $smaller-margin $small-margin;
+      font-size: 1rem;
+      border: $border;
+      display: block;
+    }
+    a {
+      margin-left: $smaller-margin;
+    }
+  }
+
+  img {
+    justify-self: flex-end;
+    align-self: center;
+    height: 18.444rem;
+  }
+}

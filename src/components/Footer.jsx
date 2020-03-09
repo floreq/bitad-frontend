@@ -55,7 +55,7 @@ function Footer() {
             Zarejestruj się i zostań uczestników konferencji Beskid IT Academic
             Day już teraz. Nie zwlekaj miejsca są ograniczone.
           </p>
-          <Link to="/rejestracja" className="nav-link button">
+          <Link to="/rejestracja#registration" className="nav-link button">
             Rejestracja
           </Link>
         </div>

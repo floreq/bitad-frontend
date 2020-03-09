@@ -79,6 +79,12 @@ span {
   border-radius: $border-radius;
 }
 
+button {
+  background: none;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 .button:hover {
   border-color: $main-blue;
   color: $main-blue;
