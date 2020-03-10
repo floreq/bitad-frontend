@@ -38,17 +38,41 @@
   }
   .checkbox {
     input[type="checkbox"] {
-      opacity: 0;
+      display: none;
     }
-    label::before {
-      content: "";
+    label {
+      position: relative;
       display: inline-block;
-      margin-right: $small-margin;
-      height: 16px;
-      width: 16px;
-      margin-bottom: -0.166rem;
-
-      border: $border;
+      padding-left: $margin + $small-margin;
+      margin-bottom: $big-margin;
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        display: inline-block;
+      }
+      &::before {
+        height: 0.888rem;
+        width: 0.888rem;
+        top: 0.111rem;
+        left: 0;
+        border: $border;
+      }
+      &::after {
+        height: 0.277rem;
+        width: 0.5rem;
+        border-left: $border;
+        border-bottom: $border;
+        transform: rotate(-45deg);
+        left: 0.223rem;
+        top: 0.388rem;
+      }
+    }
+    input[type="checkbox"] + label::after {
+      content: none;
+    }
+    input[type="checkbox"]:checked + label::after {
+      content: "";
     }
   }
   img {

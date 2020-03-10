@@ -44,11 +44,15 @@ function Registration() {
                 </label>
               </div>
               <div className="checkbox">
-                <label>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  <input type="checkbox" />
+                <input type="checkbox" id="checkbox" />
+                <label htmlFor="checkbox">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
                 </label>
               </div>
+              {/* <div class="checkbox">
+                <input type="checkbox" id="checkbox_1" />
+                <label for="checkbox_1">Pure CSS Checkbox</label>
+              </div> */}
               <button className="button">Potwierdź rejestracje</button>
             </form>
           </div>
