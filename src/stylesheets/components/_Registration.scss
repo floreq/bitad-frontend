@@ -36,7 +36,21 @@
       margin-left: $smaller-margin;
     }
   }
+  .checkbox {
+    input[type="checkbox"] {
+      opacity: 0;
+    }
+    label::before {
+      content: "";
+      display: inline-block;
+      margin-right: $small-margin;
+      height: 16px;
+      width: 16px;
+      margin-bottom: -0.166rem;
 
+      border: $border;
+    }
+  }
   img {
     justify-self: flex-end;
     align-self: center;

@@ -43,6 +43,12 @@ function Registration() {
                   <input type="text" />
                 </label>
               </div>
+              <div className="checkbox">
+                <label>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  <input type="checkbox" />
+                </label>
+              </div>
               <button className="button">Potwierdź rejestracje</button>
             </form>
           </div>
