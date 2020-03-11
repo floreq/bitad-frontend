@@ -3,7 +3,6 @@ $timeline-margin: $big-margin * 5;
 .agenda {
   text-align: left;
   .timeline {
-    height: 104px;
     z-index: -1;
     margin-right: -$timeline-margin;
     margin-left: -$timeline-margin;
@@ -19,16 +18,38 @@ $timeline-margin: $big-margin * 5;
     );
     .timeline-scroll {
       overflow-x: scroll;
-      height: 104px;
+      overflow-y: hidden;
     }
     .timeline-elements {
-      background-image: url("./../../assets/images/timeline-bar.svg");
-      background-repeat: repeat-x;
-      background-position: left;
-      width: $max-width;
-      height: 87.3px;
       display: grid;
       grid-template-columns: repeat(27, 1fr);
+      width: $max-width;
+      background-size: 134px;
+      background-image: url("./../../assets/images/timeline-bar.svg");
+      background-repeat: repeat;
+      background-position: left;
+      .element {
+        display: inline-block;
+        border-radius: 66px;
+        height: 66px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: $green;
+        opacity: 22%;
+      }
+      .element1 {
+        grid-column-start: 5;
+        grid-column-end: 10;
+      }
+      .element2 {
+        grid-column-start: 2;
+        grid-column-end: 5;
+      }
+      .element3 {
+        grid-column-start: 18;
+        grid-column-end: 26;
+        grid-row: 1;
+      }
     }
   }
 }

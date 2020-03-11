@@ -14,7 +14,12 @@ function Agenda() {
               <h3>Wykłady</h3>
               <div className="timeline">
                 <div className="timeline-scroll">
-                  <div className="timeline-elements"></div>
+                  <div className="timeline-elements">
+                    <div className="element"></div>
+                    <div className="element element1"></div>
+                    <div className="element element2"></div>
+                    <div className="element element3"></div>
+                  </div>
                 </div>
               </div>
             </div>
