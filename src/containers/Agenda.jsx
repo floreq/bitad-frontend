@@ -10,6 +10,14 @@ function Agenda() {
         <section>
           <div className="container center">
             <h1>Agenda</h1>
+            <div className="agenda">
+              <h3>Wykłady</h3>
+              <div className="timeline">
+                <div className="timeline-scroll">
+                  <div className="timeline-elements"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
