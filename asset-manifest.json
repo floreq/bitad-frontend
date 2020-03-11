@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.71586894.chunk.css",
-    "main.js": "/static/js/main.3991c5e3.chunk.js",
-    "main.js.map": "/static/js/main.3991c5e3.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c641a327.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c641a327.js.map",
-    "static/js/2.ca55d3ca.chunk.js": "/static/js/2.ca55d3ca.chunk.js",
-    "static/js/2.ca55d3ca.chunk.js.map": "/static/js/2.ca55d3ca.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.0eb4c6a6597306d373bba56fc5719ce6.js": "/precache-manifest.0eb4c6a6597306d373bba56fc5719ce6.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.71586894.chunk.css.map": "/static/css/main.71586894.chunk.css.map",
-    "static/js/2.ca55d3ca.chunk.js.LICENSE.txt": "/static/js/2.ca55d3ca.chunk.js.LICENSE.txt",
-    "static/media/main.scss": "/static/media/small-hero-bg.7723a05d.svg",
-    "static/media/bitad-logo.svg": "/static/media/bitad-logo.38626a34.svg",
-    "static/media/fb-logo.svg": "/static/media/fb-logo.9dadae0b.svg",
-    "static/media/lectures.jpg": "/static/media/lectures.4657918b.jpg",
-    "static/media/reset-logo.svg": "/static/media/reset-logo.1ab70094.svg",
-    "static/media/tw-logo.svg": "/static/media/tw-logo.9a2e757d.svg",
-    "static/media/workshop.jpg": "/static/media/workshop.4fb6b595.jpg",
-    "static/media/yt-logo.svg": "/static/media/yt-logo.27c6e899.svg"
+    "main.css": "/bitad-frontend/static/css/main.43ab3ba2.chunk.css",
+    "main.js": "/bitad-frontend/static/js/main.aa04e3a0.chunk.js",
+    "main.js.map": "/bitad-frontend/static/js/main.aa04e3a0.chunk.js.map",
+    "runtime-main.js": "/bitad-frontend/static/js/runtime-main.ac5881ed.js",
+    "runtime-main.js.map": "/bitad-frontend/static/js/runtime-main.ac5881ed.js.map",
+    "static/js/2.ca55d3ca.chunk.js": "/bitad-frontend/static/js/2.ca55d3ca.chunk.js",
+    "static/js/2.ca55d3ca.chunk.js.map": "/bitad-frontend/static/js/2.ca55d3ca.chunk.js.map",
+    "index.html": "/bitad-frontend/index.html",
+    "precache-manifest.3087c99ce355b734dfad1375bc840772.js": "/bitad-frontend/precache-manifest.3087c99ce355b734dfad1375bc840772.js",
+    "service-worker.js": "/bitad-frontend/service-worker.js",
+    "static/css/main.43ab3ba2.chunk.css.map": "/bitad-frontend/static/css/main.43ab3ba2.chunk.css.map",
+    "static/js/2.ca55d3ca.chunk.js.LICENSE.txt": "/bitad-frontend/static/js/2.ca55d3ca.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/bitad-frontend/static/media/small-hero-bg.7723a05d.svg",
+    "static/media/bitad-logo.svg": "/bitad-frontend/static/media/bitad-logo.38626a34.svg",
+    "static/media/fb-logo.svg": "/bitad-frontend/static/media/fb-logo.9dadae0b.svg",
+    "static/media/lectures.jpg": "/bitad-frontend/static/media/lectures.4657918b.jpg",
+    "static/media/reset-logo.svg": "/bitad-frontend/static/media/reset-logo.1ab70094.svg",
+    "static/media/tw-logo.svg": "/bitad-frontend/static/media/tw-logo.9a2e757d.svg",
+    "static/media/workshop.jpg": "/bitad-frontend/static/media/workshop.4fb6b595.jpg",
+    "static/media/yt-logo.svg": "/bitad-frontend/static/media/yt-logo.27c6e899.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c641a327.js",
+    "static/js/runtime-main.ac5881ed.js",
     "static/js/2.ca55d3ca.chunk.js",
-    "static/css/main.71586894.chunk.css",
-    "static/js/main.3991c5e3.chunk.js"
+    "static/css/main.43ab3ba2.chunk.css",
+    "static/js/main.aa04e3a0.chunk.js"
   ]
 }
