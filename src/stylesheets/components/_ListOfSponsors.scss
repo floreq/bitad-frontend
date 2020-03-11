@@ -1,14 +1,8 @@
 $sponsors-margin: $margin + $small-margin;
 
 .list-of-sponsors {
-  h3 {
-    margin-bottom: $sponsors-margin;
-    margin-top: $big-margin;
-    &:first-child {
-      margin-top: 0;
-    }
-  }
   .sponsors {
+    margin-bottom: $sponsors-margin;
     gap: $sponsors-margin;
     align-items: center;
   }

@@ -14,6 +14,13 @@ a {
   text-decoration: none;
 }
 
+section {
+  a {
+    font-size: $m_font-size;
+    color: $main-blue;
+  }
+}
+
 .nav-link {
   margin-right: $big-margin;
   &:last-child {
@@ -28,24 +35,34 @@ a {
 .title {
   line-height: 1.12;
   font-size: $xxl_font-size;
-  letter-spacing: -0.2px;
-  margin-top: $smaller-margin;
+  letter-spacing: 0.011rem;
   margin-bottom: $big-margin * 2.7;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
 }
 
 h1 {
   font-size: 2.6rem;
   letter-spacing: 0.045rem;
   line-height: 1.18;
-  margin-top: 0;
   margin-bottom: $margin;
 }
 
 h2 {
-  margin-top: $margin;
-  margin-bottom: 0;
+  margin-bottom: $small-margin;
   font-weight: normal;
   letter-spacing: 0.05rem;
+}
+
+// h3
+.subtitle {
+  margin-bottom: $smaller-margin;
+  line-height: 1.2;
 }
 
 h3,
@@ -56,18 +73,19 @@ h3,
 }
 
 p {
-  margin-top: 0;
   line-height: 1.9;
+  &:only-of-type {
+    margin-bottom: $bigger-margin;
+  }
 }
 
 .small-p {
-  margin-top: $small-margin;
   margin-bottom: $big-margin !important;
-  font-size: $m_font-size;
   line-height: 1.6;
 }
 
-span {
+span,
+.small-p {
   font-size: $m_font-size;
 }
 
@@ -79,7 +97,9 @@ span {
   border-radius: $border-radius;
 }
 
-button {
+button,
+input {
+  color: $main-black;
   background: none;
   font-size: 1rem;
   line-height: 1.5;
@@ -96,16 +116,8 @@ button {
   font-weight: bold;
   border-color: $main-blue;
   color: $main-blue;
-  font-size: $l_font-size;
 }
 
 .shadow {
   box-shadow: $box-shadow;
-}
-
-section {
-  a {
-    font-size: $m_font-size;
-    color: $main-blue;
-  }
 }

@@ -22,3 +22,10 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+header {
+  padding-bottom: $big-margin * 3;
+  padding-top: 7.39rem;
+  img {
+    height: 18.5rem;
+  }
+}

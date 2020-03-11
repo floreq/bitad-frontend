@@ -10,7 +10,9 @@ function Registration() {
         <div className="container two-columns">
           <div>
             <div className="introduction">
-              <h3>20 marca 2020, na terenie uczelni ATH w Bielsku-Białej</h3>
+              <h3 className="subtitle">
+                20 marca 2020, na terenie uczelni ATH w Bielsku-Białej
+              </h3>
               <h1>Rejestracja na konferencję</h1>
             </div>
             <form action="">
