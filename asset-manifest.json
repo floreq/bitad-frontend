@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/bitad-frontend/static/css/main.b0fbe719.chunk.css",
-    "main.js": "/bitad-frontend/static/js/main.e33c5879.chunk.js",
-    "main.js.map": "/bitad-frontend/static/js/main.e33c5879.chunk.js.map",
+    "main.css": "/bitad-frontend/static/css/main.fadd8759.chunk.css",
+    "main.js": "/bitad-frontend/static/js/main.efe65241.chunk.js",
+    "main.js.map": "/bitad-frontend/static/js/main.efe65241.chunk.js.map",
     "runtime-main.js": "/bitad-frontend/static/js/runtime-main.ac5881ed.js",
     "runtime-main.js.map": "/bitad-frontend/static/js/runtime-main.ac5881ed.js.map",
     "static/js/2.ca55d3ca.chunk.js": "/bitad-frontend/static/js/2.ca55d3ca.chunk.js",
     "static/js/2.ca55d3ca.chunk.js.map": "/bitad-frontend/static/js/2.ca55d3ca.chunk.js.map",
     "index.html": "/bitad-frontend/index.html",
-    "precache-manifest.5e14bc80a2ad81f8e5d1b619e902b021.js": "/bitad-frontend/precache-manifest.5e14bc80a2ad81f8e5d1b619e902b021.js",
+    "precache-manifest.96a8dbef08d525fbb913707d1e398d67.js": "/bitad-frontend/precache-manifest.96a8dbef08d525fbb913707d1e398d67.js",
     "service-worker.js": "/bitad-frontend/service-worker.js",
-    "static/css/main.b0fbe719.chunk.css.map": "/bitad-frontend/static/css/main.b0fbe719.chunk.css.map",
+    "static/css/main.fadd8759.chunk.css.map": "/bitad-frontend/static/css/main.fadd8759.chunk.css.map",
     "static/js/2.ca55d3ca.chunk.js.LICENSE.txt": "/bitad-frontend/static/js/2.ca55d3ca.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/bitad-frontend/static/media/timeline-bar.92784b12.svg",
     "static/media/bitad-logo.svg": "/bitad-frontend/static/media/bitad-logo.38626a34.svg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.ac5881ed.js",
     "static/js/2.ca55d3ca.chunk.js",
-    "static/css/main.b0fbe719.chunk.css",
-    "static/js/main.e33c5879.chunk.js"
+    "static/css/main.fadd8759.chunk.css",
+    "static/js/main.efe65241.chunk.js"
   ]
 }
