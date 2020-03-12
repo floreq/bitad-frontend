@@ -11,9 +11,16 @@ function App() {
     <Router>
       <Navbar />
       <Switch>
-        <Route exact path="/" component={Conference} />
-        <Route path="/agenda" component={Agenda} />
-        <Route path="/rejestracja" component={Registration} />
+        <Route
+          exact
+          path={process.env.PUBLIC_URL + "/"}
+          component={Conference}
+        />
+        <Route path={process.env.PUBLIC_URL + "/agenda"} component={Agenda} />
+        <Route
+          path={process.env.PUBLIC_URL + "/rejestracja"}
+          component={Registration}
+        />
       </Switch>
     </Router>
   );

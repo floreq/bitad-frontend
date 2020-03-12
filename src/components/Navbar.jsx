@@ -7,20 +7,23 @@ function Navbar() {
   return (
     <nav>
       <div className="container">
-        <NavLink to="/" className="nav-link">
+        <NavLink to={process.env.PUBLIC_URL + "/"} className="nav-link">
           <img src={ResetLogo} alt="Reset logo" />
         </NavLink>
         <div>
-          <NavLink exact to="/" className="nav-link">
+          <NavLink exact to={process.env.PUBLIC_URL + "/"} className="nav-link">
             O konferencji
           </NavLink>
-          <Link to="/#sponsors" className="nav-link">
+          <Link to={process.env.PUBLIC_URL + "/#sponsors"} className="nav-link">
             Sponsorzy
           </Link>
-          <NavLink to="/agenda" className="nav-link">
+          <NavLink to={process.env.PUBLIC_URL + "/agenda"} className="nav-link">
             Agenda
           </NavLink>
-          <NavLink to="/rejestracja" className="nav-link button">
+          <NavLink
+            to={process.env.PUBLIC_URL + "/rejestracja"}
+            className="nav-link button"
+          >
             Rejestracja
           </NavLink>
         </div>

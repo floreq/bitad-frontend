@@ -26,13 +26,13 @@ function Footer() {
       <div className="container">
         <div>
           <h3>Reset</h3>
-          <Link to="/" className="nav-link">
+          <Link to={process.env.PUBLIC_URL + "/"} className="nav-link">
             O konferencji
           </Link>
-          <Link to="/#sponsors" className="nav-link">
+          <Link to={process.env.PUBLIC_URL + "/#sponsors"} className="nav-link">
             Sponsorzy
           </Link>
-          <Link to="/agenda" className="nav-link">
+          <Link to={process.env.PUBLIC_URL + "/agenda"} className="nav-link">
             Agenda
           </Link>
         </div>
@@ -55,7 +55,10 @@ function Footer() {
             Zarejestruj się i zostań uczestników konferencji Beskid IT Academic
             Day już teraz. Nie zwlekaj miejsca są ograniczone.
           </p>
-          <Link to="/rejestracja#registration" className="nav-link button">
+          <Link
+            to={process.env.PUBLIC_URL + "//rejestracja#registration"}
+            className="nav-link button"
+          >
             Rejestracja
           </Link>
         </div>
