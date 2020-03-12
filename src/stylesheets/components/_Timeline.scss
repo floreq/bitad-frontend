@@ -1,0 +1,82 @@
+.timeline-wrapper {
+  .timeline {
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
+    margin-right: -$timeline-margin;
+    margin-left: -$timeline-margin;
+    margin-bottom: $big-margin;
+    padding-right: $timeline-margin;
+    padding-left: $timeline-margin;
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgb(247, 247, 247) 20%,
+      rgb(247, 247, 247) 50%,
+      rgb(247, 247, 247) 80%,
+      rgba(255, 255, 255, 0.9) 100%
+    );
+    background-size: auto;
+    background-repeat: no-repeat;
+    .timeline-scroll {
+      overflow-x: auto;
+      .timeline-time {
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        margin-bottom: $smaller-margin;
+        width: $max-width;
+        // Biale tlo paska z czasem
+        &::before {
+          z-index: -1;
+          content: "";
+          background-color: $white;
+          height: 68px;
+          width: 100%;
+          left: 0;
+          position: absolute;
+          margin-top: -38px;
+        }
+        span {
+          font-size: 1rem;
+          justify-self: center;
+          &:first-child {
+            justify-self: flex-start !important;
+          }
+          &:last-child {
+            justify-self: flex-end !important;
+          }
+        }
+      }
+      .timeline-elements {
+        display: grid;
+        grid-template-columns: repeat(27, 1fr);
+        margin-bottom: $big-margin;
+        width: $max-width;
+        background-size: 133.9px;
+        background-image: url("./../../assets/images/timeline-bar.svg");
+        background-repeat: repeat;
+        background-position: left;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .element {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          display: flex;
+          align-items: center;
+          border-radius: 66px;
+          height: 66px;
+          background-color: rgba($green, 0.22);
+          .image-wrapper {
+            margin-left: 5px;
+            height: 52px;
+            width: 52px;
+            border: 3px solid $green;
+            overflow: hidden;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}

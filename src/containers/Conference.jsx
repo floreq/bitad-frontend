@@ -39,8 +39,8 @@ function Conference() {
   ];
   const listSponsors = [
     {
-      id: 1,
-      title: "Diamentowi sponsorzy",
+      categoryId: 1,
+      categoryTitle: "Diamentowi sponsorzy",
       sponsors: [
         {
           id: 1,
@@ -63,8 +63,8 @@ function Conference() {
       ]
     },
     {
-      id: 2,
-      title: "Złoci sponsorzy",
+      categoryId: 2,
+      categoryTitle: "Złoci sponsorzy",
       sponsors: [
         {
           id: 1,
@@ -81,8 +81,8 @@ function Conference() {
       ]
     },
     {
-      id: 3,
-      title: "Srebrni sponsorzy",
+      categoryId: 3,
+      categoryTitle: "Srebrni sponsorzy",
       sponsors: [
         {
           id: 1,
