@@ -1,6 +1,7 @@
 $size: 3.77rem;
 
 .list-of-organisers {
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
   .organiser {
     padding: $margin $big-margin;
     .profile {
