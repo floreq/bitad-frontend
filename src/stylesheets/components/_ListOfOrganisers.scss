@@ -5,7 +5,7 @@ $size: 3.77rem;
   .organiser {
     padding: $margin $big-margin;
     .profile {
-      display: flex;
+      display: inline-flex;
       align-items: center;
       text-align: left;
       margin-bottom: $small-margin;

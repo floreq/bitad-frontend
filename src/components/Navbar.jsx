@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 import ResetLogo from "./../assets/images/reset-logo.svg";
 
 function Navbar() {
@@ -14,9 +14,12 @@ function Navbar() {
           <NavLink exact to={process.env.PUBLIC_URL + "/"} className="nav-link">
             O konferencji
           </NavLink>
-          <Link to={process.env.PUBLIC_URL + "/#sponsors"} className="nav-link">
+          <HashLink
+            to={process.env.PUBLIC_URL + "/#sponsors"}
+            className="nav-link"
+          >
             Sponsorzy
-          </Link>
+          </HashLink>
           <NavLink to={process.env.PUBLIC_URL + "/agenda"} className="nav-link">
             Agenda
           </NavLink>

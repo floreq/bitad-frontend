@@ -7,7 +7,8 @@ footer {
   background-size: 85rem, auto;
   .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    // grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: $big-margin * 2;
   }
   h3 {

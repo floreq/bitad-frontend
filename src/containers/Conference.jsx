@@ -158,7 +158,7 @@ function Conference() {
   return (
     <React.Fragment>
       <Hero />
-      <main>
+      <main id="conference">
         <section>
           <div className="container two-columns">
             <div>

@@ -36,12 +36,9 @@ function Footer() {
           >
             Sponsorzy
           </HashLink>
-          <HashLink
-            to={process.env.PUBLIC_URL + "/agenda/#agenda"}
-            className="nav-link"
-          >
+          <Link to={process.env.PUBLIC_URL + "/agenda"} className="nav-link">
             Agenda
-          </HashLink>
+          </Link>
         </div>
         <div>
           <h3>Patroni</h3>
@@ -62,12 +59,12 @@ function Footer() {
             Zarejestruj się i zostań uczestników konferencji Beskid IT Academic
             Day już teraz. Nie zwlekaj miejsca są ograniczone.
           </p>
-          <HashLink
-            to={process.env.PUBLIC_URL + "/rejestracja#registration"}
+          <Link
+            to={process.env.PUBLIC_URL + "/rejestracja"}
             className="nav-link button"
           >
             Rejestracja
-          </HashLink>
+          </Link>
         </div>
         <div>
           <h3>Poznaj nas bliżej!</h3>
