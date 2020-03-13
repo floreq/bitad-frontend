@@ -3,7 +3,6 @@ $sponsors-margin: $margin + $small-margin;
 .list-of-sponsors {
   .sponsors {
     margin-bottom: $sponsors-margin;
-    gap: $sponsors-margin;
     align-items: center;
   }
   img {

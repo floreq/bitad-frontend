@@ -5,27 +5,36 @@ $max-width: 1208px;
   max-width: $max-width;
   padding: 0 $margin;
 }
-
 .two-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: $big-margin * 2;
 }
-
 section {
   overflow: hidden;
   padding-bottom: $big-margin * 3;
   padding-top: $big-margin * 2;
 }
-
 .list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: $big-margin;
 }
 header {
   padding-bottom: $big-margin * 3;
   padding-top: 7.39rem;
   img {
     height: 18.5rem;
+  }
+}
+.event {
+  .image-wrapper {
+    margin: 5px;
+    height: 52px;
+    width: 52px;
+    border-width: 3px;
+    border-style: solid;
+    overflow: hidden;
+    border-radius: 50%;
   }
 }

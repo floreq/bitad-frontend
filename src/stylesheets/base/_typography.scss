@@ -84,9 +84,13 @@ p {
   line-height: 1.6;
 }
 
-span,
+.small-span,
 .small-p {
   font-size: $m_font-size;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .button,

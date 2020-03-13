@@ -47,7 +47,7 @@
           }
         }
       }
-      .timeline-elements {
+      .timeline-events {
         display: grid;
         grid-template-columns: repeat(27, 1fr);
         margin-bottom: $big-margin;
@@ -59,22 +59,12 @@
         &:last-child {
           margin-bottom: 0;
         }
-        .element {
+        .event {
           grid-column-start: 1;
           grid-column-end: 3;
           display: flex;
           align-items: center;
           border-radius: 66px;
-          height: 66px;
-          background-color: rgba($green, 0.22);
-          .image-wrapper {
-            margin-left: 5px;
-            height: 52px;
-            width: 52px;
-            border: 3px solid $green;
-            overflow: hidden;
-            border-radius: 50%;
-          }
         }
       }
     }

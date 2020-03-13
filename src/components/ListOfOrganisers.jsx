@@ -7,7 +7,7 @@ function ListOfOrganisers(props) {
       <div key={e.id} className="organiser shadow">
         <div className="profile">
           <div className="image-wrapper">
-            <img src={process.env.PUBLIC_URL + e.location} alt={e.alt} />
+            <img src={process.env.PUBLIC_URL + e.image} alt={e.alt} />
           </div>
           <div>
             <p className="small-p">{e.degree}</p>

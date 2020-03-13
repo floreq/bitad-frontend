@@ -11,7 +11,7 @@ function Conference() {
   const listElements = [
     {
       id: 1,
-      location: "/images/gift.svg",
+      image: "/images/gift.svg",
       alt: "Prezent",
       title: "Powitalnej paczki",
       description:
@@ -20,7 +20,7 @@ function Conference() {
     },
     {
       id: 2,
-      location: "/images/keyboard.svg",
+      image: "/images/keyboard.svg",
       alt: "Prezent",
       title: "Warsztatów",
       description:
@@ -29,7 +29,7 @@ function Conference() {
     },
     {
       id: 3,
-      location: "/images/gamepad.svg",
+      image: "/images/gamepad.svg",
       alt: "Prezent",
       title: "Gry QR Code",
       description:
@@ -44,19 +44,19 @@ function Conference() {
       sponsors: [
         {
           id: 1,
-          location: "/images/sponsors/next.svg",
+          image: "/images/sponsors/next.svg",
           alt: "next",
           link: "/"
         },
         {
           id: 2,
-          location: "/images/sponsors/iteo.svg",
+          image: "/images/sponsors/iteo.svg",
           alt: "iteo",
           link: "/"
         },
         {
           id: 3,
-          location: "/images/sponsors/4experience.svg",
+          image: "/images/sponsors/4experience.svg",
           alt: "4experience",
           link: "/"
         }
@@ -68,13 +68,13 @@ function Conference() {
       sponsors: [
         {
           id: 1,
-          location: "/images/sponsors/rekord.svg",
+          image: "/images/sponsors/rekord.svg",
           alt: "rekord",
           link: "/"
         },
         {
           id: 2,
-          location: "/images/sponsors/nav24.svg",
+          image: "/images/sponsors/nav24.svg",
           alt: "nav24",
           link: "/"
         }
@@ -86,13 +86,13 @@ function Conference() {
       sponsors: [
         {
           id: 1,
-          location: "/images/sponsors/imgnpro.svg",
+          image: "/images/sponsors/imgnpro.svg",
           alt: "imgnpro",
           link: "/"
         },
         {
           id: 2,
-          location: "/images/sponsors/helion.svg",
+          image: "/images/sponsors/helion.svg",
           alt: "helion",
           link: "/"
         }
@@ -106,7 +106,7 @@ function Conference() {
       name: "Sebastian",
       surname: "Kowalski",
       description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
-      location: "/images/organisers/sebastian-kowalski.jpg",
+      image: "/images/organisers/sebastian-kowalski.jpg",
       alt: ""
     },
     {
@@ -115,7 +115,7 @@ function Conference() {
       name: "Sebastian",
       surname: "Kowalski",
       description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
-      location: "/images/organisers/sebastian-kowalski.jpg",
+      image: "/images/organisers/sebastian-kowalski.jpg",
       alt: ""
     },
     {
@@ -124,7 +124,7 @@ function Conference() {
       name: "Sebastian",
       surname: "Kowalski",
       description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
-      location: "/images/organisers/sebastian-kowalski.jpg",
+      image: "/images/organisers/sebastian-kowalski.jpg",
       alt: ""
     },
     {
@@ -133,7 +133,7 @@ function Conference() {
       name: "Sebastian",
       surname: "Kowalski",
       description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
-      location: "/images/organisers/sebastian-kowalski.jpg",
+      image: "/images/organisers/sebastian-kowalski.jpg",
       alt: ""
     },
     {
@@ -142,7 +142,7 @@ function Conference() {
       name: "Sebastian",
       surname: "Kowalski",
       description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
-      location: "/images/organisers/sebastian-kowalski.jpg",
+      image: "/images/organisers/sebastian-kowalski.jpg",
       alt: ""
     },
     {
@@ -151,7 +151,7 @@ function Conference() {
       name: "Sebastian",
       surname: "Kowalski",
       description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
-      location: "/images/organisers/sebastian-kowalski.jpg",
+      image: "/images/organisers/sebastian-kowalski.jpg",
       alt: ""
     }
   ];
@@ -181,9 +181,9 @@ function Conference() {
                 to, aby to piątkowe spotkanie.
               </p>
             </div>
-            <div className="image-border">
+            <div className="image-indicator">
               <img src={Lectures} className="shadow" alt="Wyklady" />
-              <div className="bg"></div>
+              <div className="indicator"></div>
             </div>
           </div>
         </section>

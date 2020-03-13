@@ -6,7 +6,7 @@ function ListOfElements(props) {
     return (
       <div key={e.id} className="element shadow">
         <div>
-          <img src={process.env.PUBLIC_URL + e.location} alt={e.alt} />
+          <img src={process.env.PUBLIC_URL + e.image} alt={e.alt} />
           <h2>{e.title}</h2>
           <p className="small-p">{e.description}</p>
         </div>

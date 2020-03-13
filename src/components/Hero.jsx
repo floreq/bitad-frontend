@@ -7,10 +7,8 @@ function Hero() {
     <header className="hero">
       <div className="container">
         <img src={BitadLogo} alt="Bitad logo" />
-        <h3 className="subtitle">
-          20 marca 2020, na terenie uczelni ATH w Bielsku-Białej
-        </h3>
-        <h1 className="title">Konferencja Informatyczna</h1>
+        <h3 className="subtitle">{process.env.REACT_APP_SUBTITLE}</h3>
+        <h1 className="title">{process.env.REACT_APP_TITLE}</h1>
         <Link
           to={process.env.PUBLIC_URL + "/rejestracja"}
           className="hero-button"

@@ -30,12 +30,12 @@
   background-size: 83.6rem;
 }
 
-.image-border {
+.image-indicator {
   position: relative;
   img {
     width: 100%;
   }
-  .bg {
+  .indicator {
     z-index: -1;
     position: absolute;
     right: 0;

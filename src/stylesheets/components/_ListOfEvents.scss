@@ -1,0 +1,35 @@
+.list-of-events {
+  grid-template-columns: repeat(4, 1fr);
+  gap: $big-margin;
+  .event {
+    padding: $margin;
+    .coordinate {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      align-items: center;
+      margin-bottom: $small-margin;
+    }
+    p {
+      line-height: 1.4;
+      margin-bottom: $margin;
+    }
+    .credentials {
+      display: flex;
+      align-items: center;
+      border-radius: 66px 0 0 66px;
+      margin-right: -$margin;
+      margin-bottom: $margin;
+      span {
+        display: block;
+      }
+      .image-wrapper {
+        height: 44px;
+        width: 44px;
+      }
+    }
+    a {
+      text-align: center;
+      display: block;
+    }
+  }
+}

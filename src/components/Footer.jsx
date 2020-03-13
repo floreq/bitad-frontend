@@ -1,6 +1,7 @@
 import React from "react";
 import ListOfPatrons from "../components/ListOfPatrons";
-import { HashLink as Link } from "react-router-hash-link";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import Fb from "../assets/images/fb-logo.svg";
 import Yt from "../assets/images/yt-logo.svg";
 import Tw from "../assets/images/tw-logo.svg";
@@ -8,13 +9,13 @@ import Tw from "../assets/images/tw-logo.svg";
 const listPatrons = [
   {
     id: 1,
-    location: "/images/patrons/ath-logo.svg",
+    image: "/images/patrons/ath-logo.svg",
     alt: "Ath",
     link: "/"
   },
   {
     id: 2,
-    location: "/images/patrons/wbmii-logo.svg",
+    image: "/images/patrons/wbmii-logo.svg",
     alt: "Wbmii",
     link: "/"
   }
@@ -29,12 +30,18 @@ function Footer() {
           <Link to={process.env.PUBLIC_URL + "/"} className="nav-link">
             O konferencji
           </Link>
-          <Link to={process.env.PUBLIC_URL + "/#sponsors"} className="nav-link">
+          <HashLink
+            to={process.env.PUBLIC_URL + "/#sponsors"}
+            className="nav-link"
+          >
             Sponsorzy
-          </Link>
-          <Link to={process.env.PUBLIC_URL + "/agenda"} className="nav-link">
+          </HashLink>
+          <HashLink
+            to={process.env.PUBLIC_URL + "/agenda/#agenda"}
+            className="nav-link"
+          >
             Agenda
-          </Link>
+          </HashLink>
         </div>
         <div>
           <h3>Patroni</h3>
@@ -55,12 +62,12 @@ function Footer() {
             Zarejestruj się i zostań uczestników konferencji Beskid IT Academic
             Day już teraz. Nie zwlekaj miejsca są ograniczone.
           </p>
-          <Link
-            to={process.env.PUBLIC_URL + "//rejestracja#registration"}
+          <HashLink
+            to={process.env.PUBLIC_URL + "/rejestracja#registration"}
             className="nav-link button"
           >
             Rejestracja
-          </Link>
+          </HashLink>
         </div>
         <div>
           <h3>Poznaj nas bliżej!</h3>
@@ -87,7 +94,7 @@ function Footer() {
             Regulamin
           </Link>
         </div>
-        <span className="copyrights-text">
+        <span className="copyrights-text small-span">
           © 2020 Reset. Wszelkie prawa zastrzeżone
         </span>
       </div>

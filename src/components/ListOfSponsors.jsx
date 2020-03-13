@@ -2,15 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function ListOfSponsors(props) {
+  const listSponsors = props.listSponsors;
   const sponsors = categoryId =>
-    props.listSponsors[categoryId - 1].sponsors.map(e => {
+    listSponsors[categoryId - 1].sponsors.map(e => {
       return (
         <Link key={e.id} to={e.link}>
-          <img src={process.env.PUBLIC_URL + e.location} alt={e.alt} />
+          <img src={process.env.PUBLIC_URL + e.image} alt={e.alt} />
         </Link>
       );
     });
-  const list = props.listSponsors.map(e => {
+  const list = listSponsors.map(e => {
     return (
       <React.Fragment key={e.categoryId}>
         <h3>{e.categoryTitle}</h3>
