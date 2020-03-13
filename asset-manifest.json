@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/bitad-frontend/static/css/main.660629c5.chunk.css",
-    "main.js": "/bitad-frontend/static/js/main.0281a08c.chunk.js",
-    "main.js.map": "/bitad-frontend/static/js/main.0281a08c.chunk.js.map",
+    "main.css": "/bitad-frontend/static/css/main.6b220d2a.chunk.css",
+    "main.js": "/bitad-frontend/static/js/main.b3aa7901.chunk.js",
+    "main.js.map": "/bitad-frontend/static/js/main.b3aa7901.chunk.js.map",
     "runtime-main.js": "/bitad-frontend/static/js/runtime-main.ac5881ed.js",
     "runtime-main.js.map": "/bitad-frontend/static/js/runtime-main.ac5881ed.js.map",
     "static/js/2.ca55d3ca.chunk.js": "/bitad-frontend/static/js/2.ca55d3ca.chunk.js",
     "static/js/2.ca55d3ca.chunk.js.map": "/bitad-frontend/static/js/2.ca55d3ca.chunk.js.map",
     "index.html": "/bitad-frontend/index.html",
-    "precache-manifest.17ea655ef2770b6220cf3f4ba590b4ed.js": "/bitad-frontend/precache-manifest.17ea655ef2770b6220cf3f4ba590b4ed.js",
+    "precache-manifest.7bd49064ccbf7d8343cbeb47787fb454.js": "/bitad-frontend/precache-manifest.7bd49064ccbf7d8343cbeb47787fb454.js",
     "service-worker.js": "/bitad-frontend/service-worker.js",
-    "static/css/main.660629c5.chunk.css.map": "/bitad-frontend/static/css/main.660629c5.chunk.css.map",
+    "static/css/main.6b220d2a.chunk.css.map": "/bitad-frontend/static/css/main.6b220d2a.chunk.css.map",
     "static/js/2.ca55d3ca.chunk.js.LICENSE.txt": "/bitad-frontend/static/js/2.ca55d3ca.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/bitad-frontend/static/media/timeline-bar.92784b12.svg",
-    "static/media/bitad-logo.svg": "/bitad-frontend/static/media/bitad-logo.38626a34.svg",
+    "static/media/bitad-logo.svg": "/bitad-frontend/static/media/bitad-logo.932e65f6.svg",
     "static/media/fb-logo.svg": "/bitad-frontend/static/media/fb-logo.9dadae0b.svg",
     "static/media/lectures.jpg": "/bitad-frontend/static/media/lectures.4657918b.jpg",
     "static/media/reset-logo.svg": "/bitad-frontend/static/media/reset-logo.1ab70094.svg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.ac5881ed.js",
     "static/js/2.ca55d3ca.chunk.js",
-    "static/css/main.660629c5.chunk.css",
-    "static/js/main.0281a08c.chunk.js"
+    "static/css/main.6b220d2a.chunk.css",
+    "static/js/main.b3aa7901.chunk.js"
   ]
 }

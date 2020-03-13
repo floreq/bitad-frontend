@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7d365e4594e0ac23a86e3be28604fb05",
+    "revision": "531e565405b5fe500c324620e8fb74b7",
     "url": "/bitad-frontend/index.html"
   },
   {
-    "revision": "5cb52d1baeb57d2e4c18",
-    "url": "/bitad-frontend/static/css/main.660629c5.chunk.css"
+    "revision": "5967bf50927c5a1f1b0f",
+    "url": "/bitad-frontend/static/css/main.6b220d2a.chunk.css"
   },
   {
     "revision": "f895559cfffb6831883f",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bitad-frontend/static/js/2.ca55d3ca.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5cb52d1baeb57d2e4c18",
-    "url": "/bitad-frontend/static/js/main.0281a08c.chunk.js"
+    "revision": "5967bf50927c5a1f1b0f",
+    "url": "/bitad-frontend/static/js/main.b3aa7901.chunk.js"
   },
   {
     "revision": "75c82c76af4c8ae5c18f",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bitad-frontend/static/media/PTS75F.67969f43.woff"
   },
   {
-    "revision": "38626a34b5c13f624f34a5ae63e70e7e",
-    "url": "/bitad-frontend/static/media/bitad-logo.38626a34.svg"
+    "revision": "932e65f67460469a6e45391b42cea526",
+    "url": "/bitad-frontend/static/media/bitad-logo.932e65f6.svg"
   },
   {
     "revision": "7a2bf5d2173843cd1b710c035b939214",
