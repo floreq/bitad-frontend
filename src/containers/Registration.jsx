@@ -7,7 +7,7 @@ function Registration() {
   return (
     <React.Fragment>
       <main>
-        <section id="registration" className="registration">
+        <section className="registration">
           <div className="container two-columns">
             <div>
               <div className="introduction">

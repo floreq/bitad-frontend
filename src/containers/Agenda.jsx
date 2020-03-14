@@ -75,7 +75,7 @@ function Agenda() {
   return (
     <React.Fragment>
       <SmallHero />
-      <main id="agenda">
+      <main>
         <section>
           <div className="container center">
             <h1>Agenda</h1>

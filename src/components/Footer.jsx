@@ -56,8 +56,8 @@ function Footer() {
         <div>
           <h3>Dołącz do nas</h3>
           <p className="small-p">
-            Zarejestruj się i zostań uczestników konferencji Beskid IT Academic
-            Day już teraz. Nie zwlekaj miejsca są ograniczone.
+            Zarejestruj się i zostań uczestnikiem konferencji Beskid IT Academic
+            Day już teraz. Nie zwlekaj, miejsca są ograniczone.
           </p>
           <Link
             to={process.env.PUBLIC_URL + "/rejestracja"}
