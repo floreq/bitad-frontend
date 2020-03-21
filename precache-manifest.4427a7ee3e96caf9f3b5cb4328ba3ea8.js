@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "667466eaaac6587ef23cfc84d7d5807d",
+    "revision": "1d0dbcf67177e6baeccd01566ff70591",
     "url": "/bitad-frontend/index.html"
   },
   {
-    "revision": "ef4aa3e8f6a9a05e1c4a",
-    "url": "/bitad-frontend/static/css/main.acb55301.chunk.css"
+    "revision": "f1c85fda0c10f95575fc",
+    "url": "/bitad-frontend/static/css/main.780a5b5e.chunk.css"
   },
   {
     "revision": "d02955ecc1179e5772ef",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bitad-frontend/static/js/2.0b502ede.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ef4aa3e8f6a9a05e1c4a",
+    "revision": "f1c85fda0c10f95575fc",
     "url": "/bitad-frontend/static/js/main.75a71466.chunk.js"
   },
   {
@@ -44,36 +44,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bitad-frontend/static/media/fb-logo.9dadae0b.svg"
   },
   {
-    "revision": "e435bacad903a17b5c7fbb44e4ead68b",
-    "url": "/bitad-frontend/static/media/gray-bg.e435baca.svg"
+    "revision": "f9cd39f37fa36c2f7714363161a07b95",
+    "url": "/bitad-frontend/static/media/gray-bg.f9cd39f3.svg"
   },
   {
-    "revision": "6623c37ee908a331786204602d95002f",
-    "url": "/bitad-frontend/static/media/gray-white-bg.6623c37e.svg"
+    "revision": "fb549650ae95de10b7c75351575e6f7e",
+    "url": "/bitad-frontend/static/media/gray-white-bg.fb549650.svg"
   },
   {
-    "revision": "f951e58baf7a46fd202bc59a315ec847",
-    "url": "/bitad-frontend/static/media/hero-bg.f951e58b.svg"
+    "revision": "efdfc14935a9106605b8b90a2ea22b80",
+    "url": "/bitad-frontend/static/media/hero-bg.efdfc149.svg"
   },
   {
     "revision": "4657918b9c4d46de74318d4ac37352e6",
     "url": "/bitad-frontend/static/media/lectures.4657918b.jpg"
   },
   {
-    "revision": "f8f3bd7b503a11bf115c8cefdd7ac1e1",
-    "url": "/bitad-frontend/static/media/neutral-bg.f8f3bd7b.svg"
+    "revision": "83b00af806e74f8174ce8c9430d15e49",
+    "url": "/bitad-frontend/static/media/neutral-bg.83b00af8.svg"
   },
   {
-    "revision": "e8472fc25af77b57fc6a946bed8fdca8",
-    "url": "/bitad-frontend/static/media/registration-bg.e8472fc2.svg"
+    "revision": "3a4bf8fdd20a28b721d6e2b7174aeb79",
+    "url": "/bitad-frontend/static/media/registration-bg.3a4bf8fd.svg"
   },
   {
     "revision": "1ab70094d83ab2d976190bd09dd2327d",
     "url": "/bitad-frontend/static/media/reset-logo.1ab70094.svg"
   },
   {
-    "revision": "7723a05d7ee08ecbea790424c0fce3f4",
-    "url": "/bitad-frontend/static/media/small-hero-bg.7723a05d.svg"
+    "revision": "ed5368d519b4d629f2fc1b5960dca3e6",
+    "url": "/bitad-frontend/static/media/small-hero-bg.ed5368d5.svg"
   },
   {
     "revision": "92784b12992491f54103771b3c11b9bb",
