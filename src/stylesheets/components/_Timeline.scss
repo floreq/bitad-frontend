@@ -1,4 +1,5 @@
 $timeline-margin: $big-margin * 5;
+$event-border-radius: 3.666rem;
 
 .timeline-wrapper {
   margin-bottom: $big-margin * 2;
@@ -65,9 +66,20 @@ $timeline-margin: $big-margin * 5;
         .event {
           grid-column-start: 1;
           grid-column-end: 3;
+          height: 68px;
           display: flex;
           align-items: center;
-          border-radius: 3.666rem;
+          border-radius: $event-border-radius;
+        }
+        .break-left {
+          border-radius: $event-border-radius 0 0 $event-border-radius;
+        }
+        .break-right {
+          grid-column-start: 1 !important;
+          border-radius: 0 $event-border-radius $event-border-radius 0;
+          .image-wrapper {
+            display: none;
+          }
         }
       }
     }

@@ -2,14 +2,14 @@ import React from "react";
 import { HashLink } from "react-router-hash-link";
 
 function Timeline(props) {
-  const interval = 600000;
-
+  // np. Wed Jan 01 2020 8:00:00 GMT+0100 -> 08:00
   const dateToTimelineTime = d => {
     const h = d.getHours();
     const m = d.getMinutes();
     return `${h < 10 ? "0" + h : h}:${m < 10 ? "0" + m : m}`;
   };
 
+  // np. 08:00 -> Wed Jan 01 2020 8:00:00 GMT+0100
   const timelineTimeToDate = t => {
     const splitT = t.split(":");
     const d = new Date(2020, 0, 1, Number(splitT[0]), Number(splitT[1]));
@@ -17,26 +17,36 @@ function Timeline(props) {
   };
 
   const eventPosition = (countReferenceDate, countDateTo) => {
-    return (countDateTo - countReferenceDate) / interval + 1;
+    const referenceH = countReferenceDate.getHours();
+    const referenceM = countReferenceDate.getMinutes();
+    const negateDay = new Date(countDateTo); // Zanegowanie znaczenia daty (dzien, miesiac, rok nie powinny miec znaczenia)
+    negateDay.setHours(referenceH);
+    negateDay.setMinutes(referenceM);
+    return (countDateTo - negateDay) / 600000 + 1;
   };
 
   const event = (startTimeline, event) => {
     return event.map(e => {
+      const gridStart = eventPosition(
+        timelineTimeToDate(startTimeline),
+        e.startDate
+      );
+      const gridEnd = eventPosition(
+        timelineTimeToDate(startTimeline),
+        e.endDate
+      );
       const eventStyle = {
-        gridColumnStart: eventPosition(
-          timelineTimeToDate(startTimeline),
-          e.startDate
-        ),
-        gridColumnEnd: eventPosition(
-          timelineTimeToDate(startTimeline),
-          e.endDate
-        )
+        gridColumnStart: gridStart,
+        gridColumnEnd: gridEnd
       };
       return (
         <HashLink
           to={process.env.PUBLIC_URL + "/agenda#" + e.id}
           key={e.id}
-          className={`event ${e.color}`}
+          className={`event ${e.color}${gridStart < 0 ? " break-right" : ""}${
+            // Dlaczego 27? - w css, klasa timeline-events ma "grid-template-columns: repeat(27, 1fr)"
+            gridEnd > 27 + 1 ? " break-left" : ""
+          }`}
           style={eventStyle}
         >
           <div className={`image-wrapper ${e.color}`}>
@@ -60,14 +70,27 @@ function Timeline(props) {
         startTimeline: "12:30",
         endTimeline: "17:00",
         timedEvents: []
+      },
+      {
+        groupedId: 3,
+        startTimeline: "17:00",
+        endTimeline: "21:30",
+        timedEvents: []
       }
     ];
 
     events.forEach(e => {
       for (let i = 0; i < timeDistribution.length; i++) {
-        if (dateToTimelineTime(e.startDate) < timeDistribution[i].endTimeline) {
+        if (
+          dateToTimelineTime(e.startDate) < timeDistribution[i].endTimeline &&
+          dateToTimelineTime(e.endDate) <= timeDistribution[i].endTimeline
+        ) {
           timeDistribution[i].timedEvents.push(e);
           break;
+        } else if (
+          dateToTimelineTime(e.startDate) < timeDistribution[i].endTimeline
+        ) {
+          timeDistribution[i].timedEvents.push(e);
         }
       }
     });

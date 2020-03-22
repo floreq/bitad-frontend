@@ -58,8 +58,8 @@ const agenda = [
         image: "/images/organisers/sebastian-kowalski.jpg",
         alt: "Sebastian Kowalski",
         color: "pink",
-        startDate: new Date(2020, 0, 1, 12, 30),
-        endDate: new Date(2020, 0, 1, 13, 30)
+        startDate: new Date(2020, 0, 1, 11, 30),
+        endDate: new Date(2020, 0, 1, 13, 0)
       },
       {
         id: 5,
@@ -71,8 +71,8 @@ const agenda = [
         image: "/images/organisers/sebastian-kowalski.jpg",
         alt: "Sebastian Kowalski",
         color: "green",
-        startDate: new Date(2020, 0, 1, 14, 0),
-        endDate: new Date(2020, 0, 1, 15, 0)
+        startDate: new Date(2020, 0, 1, 13, 30),
+        endDate: new Date(2020, 0, 1, 14, 20)
       }
     ]
   },
@@ -90,8 +90,21 @@ const agenda = [
         image: "/images/organisers/sebastian-kowalski.jpg",
         alt: "Sebastian Kowalski",
         color: "green",
-        startDate: new Date(2020, 0, 1, 9, 30),
+        startDate: new Date(2020, 0, 1, 8, 30),
         endDate: new Date(2020, 0, 1, 10, 0)
+      },
+      {
+        id: 2,
+        title: "",
+        description: "",
+        room: "",
+        name: "",
+        surname: "",
+        image: "/images/organisers/sebastian-kowalski.jpg",
+        alt: "Sebastian Kowalski",
+        color: "pink",
+        startDate: new Date(1970, 10, 5, 9, 30),
+        endDate: new Date(1970, 10, 5, 11, 0)
       }
     ]
   }
