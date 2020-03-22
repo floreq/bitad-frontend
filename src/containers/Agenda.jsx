@@ -8,7 +8,7 @@ const agenda = [
   {
     categoryId: 1,
     categoryTitle: "Wykłady",
-    timeline: [
+    events: [
       {
         id: 1,
         title: "",
@@ -47,13 +47,39 @@ const agenda = [
         color: "pink",
         startDate: new Date(2020, 0, 1, 9, 30),
         endDate: new Date(2020, 0, 1, 10, 30)
+      },
+      {
+        id: 4,
+        title: "",
+        description: "",
+        room: "",
+        name: "",
+        surname: "",
+        image: "/images/organisers/sebastian-kowalski.jpg",
+        alt: "Sebastian Kowalski",
+        color: "pink",
+        startDate: new Date(2020, 0, 1, 12, 30),
+        endDate: new Date(2020, 0, 1, 13, 30)
+      },
+      {
+        id: 5,
+        title: "",
+        description: "",
+        room: "",
+        name: "",
+        surname: "",
+        image: "/images/organisers/sebastian-kowalski.jpg",
+        alt: "Sebastian Kowalski",
+        color: "green",
+        startDate: new Date(2020, 0, 1, 14, 0),
+        endDate: new Date(2020, 0, 1, 15, 0)
       }
     ]
   },
   {
     categoryId: 2,
     categoryTitle: "Warsztaty",
-    timeline: [
+    events: [
       {
         id: 1,
         title: "",
@@ -64,7 +90,7 @@ const agenda = [
         image: "/images/organisers/sebastian-kowalski.jpg",
         alt: "Sebastian Kowalski",
         color: "green",
-        startDate: new Date(2020, 0, 1, 9, 3),
+        startDate: new Date(2020, 0, 1, 9, 30),
         endDate: new Date(2020, 0, 1, 10, 0)
       }
     ]

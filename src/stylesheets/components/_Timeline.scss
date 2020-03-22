@@ -1,3 +1,5 @@
+$timeline-margin: $big-margin * 5;
+
 .timeline-wrapper {
   margin-bottom: $big-margin * 2;
   .timeline {
@@ -31,11 +33,11 @@
           z-index: -1;
           content: "";
           background-color: $white;
-          height: 68px;
+          height: 3.777rem;
           width: 100%;
           left: 0;
           position: absolute;
-          margin-top: -38px;
+          margin-top: -2.111rem;
         }
         span {
           font-size: 1rem;
@@ -53,7 +55,7 @@
         grid-template-columns: repeat(27, 1fr);
         margin-bottom: $big-margin;
         width: $max-width;
-        background-size: 134px;
+        background-size: 7.447rem;
         background-image: url("./../../assets/images/timeline-bar.svg");
         background-repeat: repeat;
         background-position: left;
@@ -65,7 +67,7 @@
           grid-column-end: 3;
           display: flex;
           align-items: center;
-          border-radius: 66px;
+          border-radius: 3.666rem;
         }
       }
     }
