@@ -3,25 +3,28 @@ $max-width: 1208px;
 .container {
   margin: auto;
   max-width: $max-width;
-  padding: 0 $margin;
+  padding: 0 var(--margin);
 }
 .two-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: $big-margin * 2;
+  column-gap: calc(var(--big-margin) * 2);
 }
 section {
   overflow: hidden;
-  padding-bottom: $big-margin * 3;
-  padding-top: $big-margin * 2;
+  padding-bottom: calc(var(--big-margin) * 3);
+  padding-top: calc(var(--big-margin) * 2);
 }
 .list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: $big-margin;
+  gap: var(--big-margin);
+  & > div {
+    background-color: $white;
+  }
 }
 header {
-  padding-bottom: $big-margin * 3;
+  padding-bottom: calc(var(--big-margin) * 3);
   padding-top: 7.39rem;
   img {
     height: 18.5rem;

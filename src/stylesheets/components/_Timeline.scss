@@ -2,7 +2,7 @@ $timeline-margin: $big-margin * 5;
 $event-border-radius: 3.666rem;
 
 .timeline-wrapper {
-  margin-bottom: $big-margin * 2;
+  margin-bottom: var(--biggest-margin);
   .timeline {
     overflow: hidden;
     z-index: 0;

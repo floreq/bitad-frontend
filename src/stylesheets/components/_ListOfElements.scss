@@ -1,12 +1,11 @@
 .list-of-elements {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: $big-margin * 2;
+  gap: var(--biggest-margin);
   .element {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: $big-margin;
-    background-color: $white;
     img {
       height: 2.44rem;
       margin-bottom: $margin;

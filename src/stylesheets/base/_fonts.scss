@@ -1,5 +1,14 @@
 $root_font-size: 18px;
 
+:root {
+  --root-font-size: #{$root_font-size};
+  --xxl-font-size: 3.444rem;
+  --xl-font-size: 2.6rem;
+  --l-font-size: 1.3rem;
+  --m-font-size: 0.898rem;
+}
+
+// Tymczasowo
 $xxl_font-size: 3.444rem;
 $l_font-size: 1.3rem;
 $m_font-size: 0.898rem;

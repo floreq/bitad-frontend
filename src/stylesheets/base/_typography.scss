@@ -1,4 +1,23 @@
 $margin: 1.067rem;
+
+:root {
+  --margin: #{$margin};
+  --biggest-margin: calc(var(--big-margin) * 2);
+  --bigger-margin: calc(var(--margin) * 3);
+  --big-margin: calc(var(--margin) * 2);
+  --smaller-margin: calc(var(--margin) * 0.3751);
+  --small-margin: calc(var(--smaller-margin) * 2);
+}
+
+@media all and (max-width: 750px) {
+  :root {
+    --biggest-margin: var(--margin);
+    --big-margin: var(--margin);
+  }
+}
+
+// Tymczasowo
+$margin: 1.067rem;
 $smaller-margin: 0.3751 * $margin;
 $small-margin: $smaller-margin * 2;
 $big-margin: $margin * 2;
@@ -16,13 +35,13 @@ a {
 
 section {
   a {
-    font-size: $m_font-size;
+    font-size: var(--m-font-size);
     color: $main-blue;
   }
 }
 
 .nav-link {
-  margin-right: $big-margin;
+  margin-right: var(--big-margin);
   &:last-child {
     margin-right: 0;
   }
@@ -34,9 +53,9 @@ section {
 // h1
 .title {
   line-height: 1.12;
-  font-size: $xxl_font-size;
+  font-size: var(--xxl-font-size);
   letter-spacing: 0.011rem;
-  margin-bottom: $big-margin * 2.7;
+  margin-bottom: calc(var(--big-margin) * 2.7);
 }
 
 h1,
@@ -47,27 +66,27 @@ p {
 }
 
 h1 {
-  font-size: 2.6rem;
+  font-size: var(--xl-font-size);
   letter-spacing: 0.045rem;
   line-height: 1.18;
-  margin-bottom: $margin;
+  margin-bottom: var(--margin);
 }
 
 h2 {
-  margin-bottom: $small-margin;
+  margin-bottom: var(--small-margin);
   font-weight: normal;
   letter-spacing: 0.05rem;
 }
 
 // h3
 .subtitle {
-  margin-bottom: $smaller-margin;
+  margin-bottom: var(--smaller-margin);
   line-height: 1.2;
 }
 
 h3,
 .hero-button {
-  font-size: $l_font-size;
+  font-size: var(--l-font-size);
   letter-spacing: -0.1px;
   font-weight: normal;
 }
@@ -75,18 +94,18 @@ h3,
 p {
   line-height: 1.9;
   &:only-of-type {
-    margin-bottom: $bigger-margin;
+    margin-bottom: var(--bigger-margin);
   }
 }
 
 .small-p {
-  margin-bottom: $big-margin !important;
+  margin-bottom: var(--big-margin) !important;
   line-height: 1.6;
 }
 
 .small-span,
 .small-p {
-  font-size: $m_font-size;
+  font-size: var(--m-font-size);
 }
 
 .bold {
@@ -96,7 +115,7 @@ p {
 .button,
 .hero-button {
   display: inline-block;
-  padding: $smaller-margin $margin;
+  padding: var(--smaller-margin) var(--margin);
   border: $border;
   border-radius: $border-radius;
 }
@@ -105,7 +124,7 @@ button,
 input {
   color: $main-black;
   background: none;
-  font-size: 1rem;
+  font-size: var(--root-font-size);
   line-height: 1.5;
 }
 
@@ -115,8 +134,8 @@ input {
 }
 
 .hero-button {
-  padding-left: $big-margin;
-  padding-right: $big-margin;
+  padding-left: var(--big-margin);
+  padding-right: var(--big-margin);
   font-weight: bold;
   border-color: $main-blue;
   color: $main-blue;
