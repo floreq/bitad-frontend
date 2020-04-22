@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/bitad-frontend/precache-manifest.72683541cd08f9bf586e42760cabb9b5.js"
+  "/bitad-frontend/precache-manifest.28f7161e45205df610a13899e5c50377.js"
 );
 
 self.addEventListener('message', (event) => {
