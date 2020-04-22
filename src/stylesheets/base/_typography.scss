@@ -1,4 +1,4 @@
-$margin: 1.067rem;
+$margin: 1rem;
 
 :root {
   --margin: #{$margin};
@@ -11,13 +11,13 @@ $margin: 1.067rem;
 
 @media all and (max-width: 750px) {
   :root {
-    --biggest-margin: var(--margin);
+    --biggest-margin: calc(var(--margin) * 2);
     --big-margin: var(--margin);
   }
 }
 
 // Tymczasowo
-$margin: 1.067rem;
+$margin: 1rem;
 $smaller-margin: 0.3751 * $margin;
 $small-margin: $smaller-margin * 2;
 $big-margin: $margin * 2;
@@ -42,9 +42,6 @@ section {
 
 .nav-link {
   margin-right: var(--big-margin);
-  &:last-child {
-    margin-right: 0;
-  }
   &:hover {
     color: $main-blue;
   }

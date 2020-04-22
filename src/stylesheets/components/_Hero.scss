@@ -5,6 +5,6 @@
   background-position: top;
   background-size: auto 42.22rem;
   img {
-    margin-bottom: $big_margin * 1.7;
+    margin-bottom: calc(var(--big-margin) * 1.7);
   }
 }

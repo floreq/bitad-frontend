@@ -7,13 +7,13 @@ $max-width: 1208px;
 }
 .two-columns {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: calc(var(--big-margin) * 2);
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: var(--bigger-margin);
 }
 section {
   overflow: hidden;
   padding-bottom: calc(var(--big-margin) * 3);
-  padding-top: calc(var(--big-margin) * 2);
+  padding-top: var(--bigger-margin);
 }
 .list {
   display: grid;
@@ -27,7 +27,7 @@ header {
   padding-bottom: calc(var(--big-margin) * 3);
   padding-top: 7.39rem;
   img {
-    height: 18.5rem;
+    max-height: 18.5rem;
   }
 }
 .event {
@@ -39,5 +39,11 @@ header {
     border-style: solid;
     overflow: hidden;
     border-radius: 50%;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .two-columns {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   }
 }

@@ -11,24 +11,47 @@ function Navbar() {
           <img src={ResetLogo} alt="Reset logo" />
         </NavLink>
         <div>
-          <NavLink exact to={process.env.PUBLIC_URL + "/"} className="nav-link">
-            O konferencji
-          </NavLink>
-          <HashLink
-            to={process.env.PUBLIC_URL + "/#sponsors"}
-            className="nav-link"
-          >
-            Sponsorzy
-          </HashLink>
-          <NavLink to={process.env.PUBLIC_URL + "/agenda"} className="nav-link">
-            Agenda
-          </NavLink>
-          <NavLink
-            to={process.env.PUBLIC_URL + "/rejestracja"}
-            className="nav-link button"
-          >
-            Rejestracja
-          </NavLink>
+          <ul className="nav-links">
+            <li>
+              <NavLink
+                exact
+                to={process.env.PUBLIC_URL + "/"}
+                className="nav-link"
+              >
+                O konferencji
+              </NavLink>
+            </li>
+            <li>
+              <HashLink
+                to={process.env.PUBLIC_URL + "/#sponsors"}
+                className="nav-link"
+              >
+                Sponsorzy
+              </HashLink>
+            </li>
+            <li>
+              <NavLink
+                to={process.env.PUBLIC_URL + "/agenda"}
+                className="nav-link"
+              >
+                Agenda
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to={process.env.PUBLIC_URL + "/rejestracja"}
+                className="nav-link button"
+              >
+                Rejestracja
+              </NavLink>
+            </li>
+          </ul>
+          <div className="hambuerger">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </nav>

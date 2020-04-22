@@ -8,6 +8,13 @@ $root_font-size: 18px;
   --m-font-size: 0.898rem;
 }
 
+@media all and (max-width: 750px) {
+  :root {
+    --l-font-size: var(--root-font-size);
+    --xxl-font-size: 2.4rem;
+  }
+}
+
 // Tymczasowo
 $xxl_font-size: 3.444rem;
 $l_font-size: 1.3rem;
@@ -27,6 +34,6 @@ $m_font-size: 0.898rem;
 
 html {
   font-family: "PT Sans";
-  font-size: $root_font-size;
+  font-size: var(--root-font-size);
   color: $main-black;
 }
