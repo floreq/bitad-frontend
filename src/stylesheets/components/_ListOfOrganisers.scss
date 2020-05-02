@@ -1,14 +1,17 @@
-$size: 3.77rem;
+$size: 68px;
 
 .list-of-organisers {
-  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--min-column-width), 1fr)
+  );
   .organiser {
-    padding: $margin $big-margin;
+    padding: var(--margin) var(--big-margin);
     .profile {
       display: inline-flex;
       align-items: center;
       text-align: left;
-      margin-bottom: $small-margin;
+      margin-bottom: var(--small-margin);
       p,
       h3 {
         margin: 0 !important;
@@ -16,10 +19,14 @@ $size: 3.77rem;
     }
   }
   .image-wrapper {
-    margin-right: $margin;
+    margin-right: var(--margin);
     width: $size;
     height: $size;
     border-radius: 50%;
     overflow: hidden;
+    img {
+      width: $size;
+      height: $size;
+    }
   }
 }

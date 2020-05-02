@@ -1,5 +1,5 @@
 .registration {
-  padding-top: $bigger-margin * 2 + $smaller-margin;
+  padding-top: calc(var(--bigger-margin) * 2 + var(--smaller-margin));
   background: url(../../assets/images/registration-bg.svg);
   background-position: center top;
   background-size: 85.27rem auto;
@@ -9,24 +9,24 @@
   }
   .introduction {
     h1 {
-      margin-bottom: $big-margin;
+      margin-bottom: var(--big-margin);
     }
   }
 
   form {
     label {
-      margin-right: $margin;
-      margin-bottom: $margin;
+      margin-right: var(--margin);
+      margin-bottom: var(--margin);
       display: inline-block;
     }
     input {
-      margin-top: $smaller-margin;
-      padding: $smaller-margin $small-margin;
+      margin-top: var(--smaller-margin);
+      padding: var(--smaller-margin) var(--small-margin);
       border: $border;
       display: block;
     }
     a {
-      margin-left: $smaller-margin;
+      margin-left: var(--smaller-margin);
     }
   }
   .checkbox {
@@ -38,8 +38,8 @@
     label {
       position: relative;
       display: inline-block;
-      padding-left: $margin + $small-margin;
-      margin-bottom: $big-margin;
+      padding-left: calc(var(--margin) + var(--small-margin));
+      margin-bottom: var(--big-margin);
       &::before,
       &::after {
         position: absolute;

@@ -7,31 +7,34 @@ footer {
   background-size: 85rem, auto;
   .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(var(--min-column-width), 1fr)
+    );
     gap: var(--biggest-margin);
   }
   h3 {
     margin-top: 0;
-    margin-bottom: $margin;
+    margin-bottom: var(--margin);
   }
   a {
-    font-size: $m_font-size;
+    font-size: var(--m-font-size);
   }
   .adress,
   .mail {
-    font-size: $m_font-size;
+    font-size: var(--m-font-size);
   }
   .adress {
     line-height: 1.14;
-    margin-bottom: $smaller-margin;
+    margin-bottom: var(--smaller-margin);
   }
   .mail {
     display: inline-block;
-    margin-top: $big-margin;
+    margin-top: var(--big-margin);
   }
   .social-icons {
     a {
-      margin-right: $margin;
+      margin-right: var(--margin);
     }
     img {
       height: 0.77rem;

@@ -13,7 +13,6 @@ $purple: #6e03e4;
 @mixin lightColor($e) {
   background-color: rgba($e, 0.12);
 }
-
 .green {
   @include color($green);
 }

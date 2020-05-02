@@ -1,24 +1,24 @@
 .list-of-events {
   grid-template-columns: repeat(auto-fill, minmax(273px, 1fr));
-  gap: $big-margin;
+  gap: var(--big-margin);
   .event {
-    padding: $margin;
+    padding: var(--margin);
     .coordinate {
       display: grid;
       grid-template-columns: repeat(2, auto);
       align-items: center;
-      margin-bottom: $small-margin;
+      margin-bottom: var(--small-margin);
     }
     p {
       line-height: 1.4;
-      margin-bottom: $margin;
+      margin-bottom: var(--margin);
     }
     .credentials {
       display: flex;
       align-items: center;
       border-radius: 66px 0 0 66px;
-      margin-right: -$margin;
-      margin-bottom: $margin;
+      margin-right: calc(var(--margin) * -1);
+      margin-bottom: var(--margin);
       span {
         display: block;
       }

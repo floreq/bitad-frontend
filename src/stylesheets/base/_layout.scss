@@ -1,5 +1,11 @@
 $max-width: 1208px;
 
+:root {
+  --min-column-width: 340px;
+}
+.no-scroll {
+  overflow: hidden;
+}
 .container {
   margin: auto;
   max-width: $max-width;
@@ -9,6 +15,18 @@ $max-width: 1208px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   gap: var(--bigger-margin);
+}
+.reverse {
+  div:last-child {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+}
+.half-right {
+  text-align: left;
+  position: relative;
+  left: 50%;
+  margin-left: var(--margin);
 }
 section {
   overflow: hidden;
@@ -25,9 +43,9 @@ section {
 }
 header {
   padding-bottom: calc(var(--big-margin) * 3);
-  padding-top: 7.39rem;
+  padding-top: 134px;
   img {
-    max-height: 18.5rem;
+    max-height: 333px;
   }
 }
 .event {
@@ -42,7 +60,27 @@ header {
   }
 }
 
-@media all and (max-width: 380px) {
+@media all and (max-width: 866px) {
+  .reverse {
+    div:last-child {
+      grid-row-start: 2;
+    }
+  }
+}
+
+@media all and (max-width: 720px) {
+  .half-right {
+    text-align: center;
+    position: relative;
+    left: 0;
+    margin-left: 0;
+  }
+}
+
+@media all and (max-width: 400px) {
+  :root {
+    --min-column-width: 267px;
+  }
   .two-columns {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   }

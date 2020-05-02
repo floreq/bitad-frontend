@@ -1,6 +1,9 @@
 .list-of-elements {
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: var(--biggest-margin);
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--min-column-width), 1fr)
+  );
+  gap: var(--bigger-margin);
   .element {
     display: flex;
     flex-direction: column;
@@ -8,7 +11,7 @@
     padding: var(--big-margin);
     img {
       height: 2.44rem;
-      margin-bottom: $margin;
+      margin-bottom: var(--margin);
     }
   }
 }

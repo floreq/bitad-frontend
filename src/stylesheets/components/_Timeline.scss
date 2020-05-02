@@ -1,4 +1,3 @@
-$timeline-margin: $big-margin * 5;
 $event-border-radius: 3.666rem;
 
 .timeline-wrapper {
@@ -7,11 +6,11 @@ $event-border-radius: 3.666rem;
     overflow: hidden;
     z-index: 0;
     position: relative;
-    margin-right: -$timeline-margin;
-    margin-left: -$timeline-margin;
-    margin-bottom: $big-margin;
-    padding-right: $timeline-margin;
-    padding-left: $timeline-margin;
+    margin-right: calc(var(--big-margin) * -5);
+    margin-left: calc(var(--big-margin) * -5);
+    margin-bottom: var(--big-margin);
+    padding-right: calc(var(--big-margin) * 5);
+    padding-left: calc(var(--big-margin) * 5);
     background-image: linear-gradient(
       90deg,
       rgba(255, 255, 255, 0.9) 0%,
@@ -27,18 +26,18 @@ $event-border-radius: 3.666rem;
       .timeline-time {
         display: grid;
         grid-template-columns: repeat(18, 1fr);
-        margin-bottom: $smaller-margin;
+        margin-bottom: var(--smaller-margin);
         width: $max-width;
         // Biale tlo paska z czasem
         &::before {
           z-index: -1;
           content: "";
           background-color: $white;
-          height: 3.777rem;
+          height: 60px;
           width: 100%;
           left: 0;
           position: absolute;
-          margin-top: -2.111rem;
+          margin-top: -31px;
         }
         span {
           font-size: 1rem;
@@ -54,7 +53,7 @@ $event-border-radius: 3.666rem;
       .timeline-events {
         display: grid;
         grid-template-columns: repeat(27, 1fr);
-        margin-bottom: $big-margin;
+        margin-bottom: var(--big-margin);
         width: $max-width;
         background-size: 7.447rem;
         background-image: url("./../../assets/images/timeline-bar.svg");

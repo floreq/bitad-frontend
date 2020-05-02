@@ -16,7 +16,7 @@ function Conference() {
       title: "Powitalnej paczki",
       description:
         "Dlatego każdy z Was zaraz po potwierdzeniu swojej obecności na konferencji będzie czekała powitalna paczka.",
-      fintOutMore: "/"
+      fintOutMore: "/",
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ function Conference() {
       title: "Warsztatów",
       description:
         "Warsztaty mają na celu zaprezentowanie podstaw tematów będących na czasie w praktyce.",
-      fintOutMore: "/"
+      fintOutMore: "/",
     },
     {
       id: 3,
@@ -34,8 +34,8 @@ function Conference() {
       title: "Gry QR Code",
       description:
         "Baw się z nami i zdobywaj punkty podczas udziału w prelekcjach i warsztatach. ",
-      fintOutMore: "/"
-    }
+      fintOutMore: "/",
+    },
   ];
   const listSponsors = [
     {
@@ -46,21 +46,21 @@ function Conference() {
           id: 1,
           image: "/images/sponsors/next.svg",
           alt: "next",
-          link: "/"
+          link: "/",
         },
         {
           id: 2,
           image: "/images/sponsors/iteo.svg",
           alt: "iteo",
-          link: "/"
+          link: "/",
         },
         {
           id: 3,
           image: "/images/sponsors/4experience.svg",
           alt: "4experience",
-          link: "/"
-        }
-      ]
+          link: "/",
+        },
+      ],
     },
     {
       categoryId: 2,
@@ -70,15 +70,15 @@ function Conference() {
           id: 1,
           image: "/images/sponsors/rekord.svg",
           alt: "rekord",
-          link: "/"
+          link: "/",
         },
         {
           id: 2,
           image: "/images/sponsors/nav24.svg",
           alt: "nav24",
-          link: "/"
-        }
-      ]
+          link: "/",
+        },
+      ],
     },
     {
       categoryId: 3,
@@ -88,16 +88,16 @@ function Conference() {
           id: 1,
           image: "/images/sponsors/imgnpro.svg",
           alt: "imgnpro",
-          link: "/"
+          link: "/",
         },
         {
           id: 2,
           image: "/images/sponsors/helion.svg",
           alt: "helion",
-          link: "/"
-        }
-      ]
-    }
+          link: "/",
+        },
+      ],
+    },
   ];
   const listOrganisers = [
     {
@@ -107,7 +107,7 @@ function Conference() {
       surname: "Kowalski",
       description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
       image: "/images/organisers/sebastian-kowalski.jpg",
-      alt: ""
+      alt: "",
     },
     {
       id: 2,
@@ -116,7 +116,7 @@ function Conference() {
       surname: "Kowalski",
       description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
       image: "/images/organisers/sebastian-kowalski.jpg",
-      alt: ""
+      alt: "",
     },
     {
       id: 3,
@@ -125,7 +125,7 @@ function Conference() {
       surname: "Kowalski",
       description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
       image: "/images/organisers/sebastian-kowalski.jpg",
-      alt: ""
+      alt: "",
     },
     {
       id: 4,
@@ -134,7 +134,7 @@ function Conference() {
       surname: "Kowalski",
       description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
       image: "/images/organisers/sebastian-kowalski.jpg",
-      alt: ""
+      alt: "",
     },
     {
       id: 5,
@@ -143,7 +143,7 @@ function Conference() {
       surname: "Kowalski",
       description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
       image: "/images/organisers/sebastian-kowalski.jpg",
-      alt: ""
+      alt: "",
     },
     {
       id: 6,
@@ -152,8 +152,8 @@ function Conference() {
       surname: "Kowalski",
       description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
       image: "/images/organisers/sebastian-kowalski.jpg",
-      alt: ""
-    }
+      alt: "",
+    },
   ];
   return (
     <React.Fragment>
@@ -208,10 +208,7 @@ function Conference() {
           </div>
         </section>
         <section id="sponsors" className="half-neutral">
-          <div className="container two-columns">
-            <div>
-              <ListOfSponsors listSponsors={listSponsors} />
-            </div>
+          <div className="container two-columns reverse">
             <div>
               <h1>
                 Konferencja jest
@@ -231,6 +228,9 @@ function Conference() {
                 Jak i motywacji do jej dalszego poszerzania. Dodatkowo dbamy o
                 to, aby to piątkowe spotkanie.
               </p>
+            </div>
+            <div>
+              <ListOfSponsors listSponsors={listSponsors} />
             </div>
           </div>
         </section>

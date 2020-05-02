@@ -1,31 +1,24 @@
-$root_font-size: 18px;
-
 :root {
-  --root-font-size: #{$root_font-size};
-  --xxl-font-size: 3.444rem;
-  --xl-font-size: 2.6rem;
-  --l-font-size: 1.3rem;
-  --m-font-size: 0.898rem;
+  --root-font-size: 18px;
+  --xxl-font-size: 62px;
+  --xl-font-size: 47px;
+  --l-font-size: 24px;
+  --m-font-size: 16px;
 }
 
 @media all and (max-width: 750px) {
   :root {
-    --l-font-size: var(--root-font-size);
-    --xxl-font-size: 2.4rem;
+    --l-font-size: 20px;
+    --xxl-font-size: 43px;
+    --xl-font-size: 34px;
   }
 }
-
-// Tymczasowo
-$xxl_font-size: 3.444rem;
-$l_font-size: 1.3rem;
-$m_font-size: 0.898rem;
 
 @font-face {
   font-family: "PT Sans";
   src: url("./../../assets/fonts/PTS55F.woff");
   font-weight: normal;
 }
-
 @font-face {
   font-family: "PT Sans";
   src: url("./../../assets/fonts/PTS75F.woff");
