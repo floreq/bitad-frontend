@@ -1,7 +1,7 @@
 nav {
   position: absolute;
   width: 100%;
-  padding: $margin 0;
+  padding: var(--margin) 0;
   background-color: rgba($white, 0.9);
   .container {
     display: flex;
@@ -9,7 +9,7 @@ nav {
     align-items: center;
   }
   img {
-    height: $big-margin * 1.2;
+    height: 36px;
   }
   .active {
     color: $main-blue;
@@ -19,39 +19,13 @@ nav {
       border-color: $main-black;
     }
   }
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    li {
-      display: inline-block;
-      &:last-child {
-        margin-right: calc(var(--big-margin) * -1);
-      }
+  .nav-links {
+    a {
+      display: inline;
     }
   }
   .hambuerger {
     display: none;
-    input {
-      display: block;
-      margin: 0;
-      width: 33px;
-      height: 19px;
-      position: absolute;
-      opacity: 0;
-      z-index: 2;
-      &:checked ~ span {
-        opacity: 1;
-        transform: rotate(45deg) translate(-1px, -1px);
-      }
-      &:checked ~ span:nth-last-child(2) {
-        opacity: 0;
-        transform: rotate(0deg) scale(0.1, 0.1);
-      }
-      &:checked ~ span:nth-last-child(1) {
-        transform: rotate(-45deg) translate(-1px, 2px);
-      }
-    }
     span {
       display: block;
       width: 33px;
@@ -62,8 +36,8 @@ nav {
       border-radius: 3px;
       z-index: 1;
       transform-origin: 4px 0px;
-      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-        opacity 0.55s ease;
+      transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1),
+        opacity 0.3s ease;
       &:first-child {
         transform-origin: 0% 0%;
       }
@@ -74,10 +48,36 @@ nav {
     }
   }
 }
+.open {
+  z-index: 1;
+  height: 100vh;
+  background-color: $main-lgray;
+  .nav-links {
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: var(--margin);
+    a {
+      font-size: var(--xl-font-size);
+      display: block;
+    }
+  }
+  span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-1px, -2px);
+  }
+  span:nth-last-child(1) {
+    transform: rotate(-45deg) translate(-3px, 3px);
+  }
+  span:nth-last-child(2) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.1, 0.1);
+  }
+}
 
 @media all and (max-width: 750px) {
   nav {
-    ul {
+    .nav-links {
       display: none;
     }
     .hambuerger {
