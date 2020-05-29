@@ -3,14 +3,14 @@ import { HashLink } from "react-router-hash-link";
 
 function Timeline(props) {
   // np. Wed Jan 01 2020 8:00:00 GMT+0100 -> 08:00
-  const dateToTimelineTime = d => {
+  const dateToTimelineTime = (d) => {
     const h = d.getHours();
     const m = d.getMinutes();
     return `${h < 10 ? "0" + h : h}:${m < 10 ? "0" + m : m}`;
   };
 
   // np. 08:00 -> Wed Jan 01 2020 8:00:00 GMT+0100
-  const timelineTimeToDate = t => {
+  const timelineTimeToDate = (t) => {
     const splitT = t.split(":");
     const d = new Date(2020, 0, 1, Number(splitT[0]), Number(splitT[1]));
     return d;
@@ -26,7 +26,7 @@ function Timeline(props) {
   };
 
   const event = (startTimeline, event) => {
-    return event.map(e => {
+    return event.map((e) => {
       const gridStart = eventPosition(
         timelineTimeToDate(startTimeline),
         e.startDate
@@ -37,7 +37,7 @@ function Timeline(props) {
       );
       const eventStyle = {
         gridColumnStart: gridStart,
-        gridColumnEnd: gridEnd
+        gridColumnEnd: gridEnd,
       };
       return (
         <HashLink
@@ -57,29 +57,29 @@ function Timeline(props) {
     });
   };
 
-  const timeDistribution = events => {
+  const timeDistribution = (events) => {
     let timeDistribution = [
       {
         groupedId: 1,
         startTimeline: "8:00",
         endTimeline: "12:30",
-        timedEvents: []
+        timedEvents: [],
       },
       {
         groupedId: 2,
         startTimeline: "12:30",
         endTimeline: "17:00",
-        timedEvents: []
+        timedEvents: [],
       },
       {
         groupedId: 3,
         startTimeline: "17:00",
         endTimeline: "21:30",
-        timedEvents: []
-      }
+        timedEvents: [],
+      },
     ];
 
-    events.forEach(e => {
+    events.forEach((e) => {
       for (let i = 0; i < timeDistribution.length; i++) {
         if (
           dateToTimelineTime(e.startDate) < timeDistribution[i].endTimeline &&
@@ -108,7 +108,7 @@ function Timeline(props) {
       i *= 2;
       let timeStyle = {
         gridColumnStart: i,
-        gridColumnEnd: i + 2
+        gridColumnEnd: i + 2,
       };
       return (
         <span style={timeStyle} key={e}>
@@ -118,8 +118,8 @@ function Timeline(props) {
     });
   };
 
-  const timeline = events => {
-    return timeDistribution(events).map(e => {
+  const timeline = (events) => {
+    return timeDistribution(events).map((e) => {
       return e.timedEvents.length > 0 ? (
         <React.Fragment key={e.groupedId}>
           <div className="timeline-time">
@@ -133,7 +133,7 @@ function Timeline(props) {
     });
   };
 
-  const timelineWrapper = props.agenda.map(e => {
+  const timelineWrapper = props.agenda.map((e) => {
     return (
       <React.Fragment key={e.categoryId}>
         <h3>{e.categoryTitle}</h3>
