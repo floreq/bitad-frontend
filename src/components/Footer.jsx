@@ -11,14 +11,14 @@ const listPatrons = [
     id: 1,
     image: "/images/patrons/ath-logo.svg",
     alt: "Ath",
-    link: "/"
+    link: "/",
   },
   {
     id: 2,
     image: "/images/patrons/wbmii-logo.svg",
     alt: "Wbmii",
-    link: "/"
-  }
+    link: "/",
+  },
 ];
 
 function Footer() {
