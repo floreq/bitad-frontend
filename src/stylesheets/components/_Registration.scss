@@ -12,7 +12,6 @@
       margin-bottom: var(--big-margin);
     }
   }
-
   form {
     label {
       margin-right: var(--margin);
@@ -76,6 +75,11 @@
   img {
     justify-self: flex-end;
     align-self: center;
-    height: 18.444rem;
+    width: 100%;
+  }
+  @media all and (max-width: 750px) {
+    img {
+      display: none;
+    }
   }
 }
