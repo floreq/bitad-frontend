@@ -53,7 +53,7 @@ $event-border-radius: 3.666rem;
       .timeline-events {
         display: grid;
         grid-template-columns: repeat(27, 1fr);
-        margin-bottom: var(--big-margin);
+        margin-bottom: 32px; // can not be var(--big-margin)
         width: $max-width;
         background-size: 7.447rem;
         background-image: url("./../../assets/images/timeline-bar.svg");
