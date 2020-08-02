@@ -12,7 +12,6 @@ $max-width: 1208px;
   --section-margin: 96px;
   --min-column-width: 340px;
 }
-
 @media all and (max-width: 750px) {
   :root {
     --margin-m: 16px;
@@ -27,9 +26,7 @@ $max-width: 1208px;
 
 header {
   padding-top: 134px;
-}
-.no-scroll {
-  overflow: hidden;
+  padding-bottom: var(--section-margin);
 }
 .container {
   margin: auto;
@@ -43,12 +40,6 @@ header {
   // Remove margin-bottom from last child of parent
   div > :last-child {
     margin-bottom: 0;
-  }
-}
-.reverse {
-  div:last-child {
-    grid-column-start: 1;
-    grid-row-start: 1;
   }
 }
 .half-right {
@@ -82,14 +73,13 @@ section {
   }
 }
 
-@media all and (max-width: 866px) {
+@media all and (max-width: 864px) {
   .reverse {
     div:last-child {
-      grid-row-start: 2;
+      grid-row-start: 1;
     }
   }
 }
-
 @media all and (max-width: 720px) {
   .half-right {
     text-align: center;
@@ -98,8 +88,7 @@ section {
     margin-left: 0;
   }
 }
-
-@media all and (max-width: 400px) {
+@media all and (max-width: 450px) {
   :root {
     --min-column-width: 267px;
   }

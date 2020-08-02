@@ -3,7 +3,13 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: auto 28.3rem;
-  img {
-    justify-self: flex-end;
+}
+
+@media all and (max-width: 864px) {
+  .small-hero {
+    .two-columns {
+      row-gap: var(--margin-xxl);
+    }
+    text-align: center;
   }
 }

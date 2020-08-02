@@ -210,6 +210,9 @@ function Conference() {
         <section id="sponsors" className="half-neutral">
           <div className="container two-columns reverse">
             <div>
+              <ListOfSponsors listSponsors={listSponsors} />
+            </div>
+            <div>
               <h1>
                 Konferencja jest
                 <br />
@@ -228,9 +231,6 @@ function Conference() {
                 Jak i motywacji do jej dalszego poszerzania. Dodatkowo dbamy o
                 to, aby to piątkowe spotkanie.
               </p>
-            </div>
-            <div>
-              <ListOfSponsors listSponsors={listSponsors} />
             </div>
           </div>
         </section>

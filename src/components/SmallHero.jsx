@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function SmallHero() {
   return (
     <header className="small-hero">
-      <div className="container two-columns">
+      <div className="container two-columns reverse">
         <div>
           <h3 className="subtitle">{process.env.REACT_APP_SUBTITLE}</h3>
           <h1 className="title">{process.env.REACT_APP_TITLE}</h1>
@@ -16,7 +16,9 @@ function SmallHero() {
             Zapisz się już teraz!
           </Link>
         </div>
-        <img src={BitadLogo} alt="Bitad logo" />
+        <div>
+          <img className="hero-image" src={BitadLogo} alt="Bitad logo" />
+        </div>
       </div>
     </header>
   );

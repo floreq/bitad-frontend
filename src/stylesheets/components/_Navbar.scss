@@ -45,6 +45,9 @@ nav {
 }
 
 @media all and (max-width: 750px) {
+  .no-scroll {
+    overflow: hidden;
+  }
   nav {
     .nav-links {
       display: none;

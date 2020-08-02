@@ -89,6 +89,30 @@ p {
 .bold {
   font-weight: bold;
 }
+.title {
+  line-height: var(--line-height-xxl);
+  font-size: var(--font-size-xxl);
+  letter-spacing: 0.2px;
+  margin-bottom: var(--section-margin);
+}
+.subtitle {
+  margin-bottom: var(--margin-l);
+}
+.hero-image {
+  max-height: 333px;
+}
+.hero-button {
+  display: inline-block;
+  padding: var(--margin-xxs) var(--margin);
+  border: $border;
+  border-radius: $border-radius;
+  text-align: center;
+  font-size: var(--font-size-m);
+  letter-spacing: -0.1px;
+  font-weight: bold;
+  border-color: $main-blue;
+  color: $main-blue;
+}
 .button {
   display: inline-block;
   padding: var(--margin-xxs) var(--margin-xs);
