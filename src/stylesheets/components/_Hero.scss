@@ -1,10 +1,33 @@
 .hero {
+  padding-bottom: var(--section-margin);
   text-align: center;
   background-image: url("./../../assets/images/hero-bg.svg");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: auto 42.22rem;
-  img {
-    margin-bottom: calc(var(--big-margin) * 1.7);
+  background-size: auto 760px;
+  .title {
+    line-height: var(--line-height-xxl);
+    font-size: var(--font-size-xxl);
+    letter-spacing: 0.2px;
+    margin-bottom: var(--section-margin);
+  }
+  .subtitle {
+    margin-bottom: var(--margin-l);
+  }
+  .hero-image {
+    margin-bottom: var(--margin-xxl);
+    max-height: 333px;
+  }
+  .hero-button {
+    display: inline-block;
+    padding: var(--margin-xxs) var(--margin);
+    border: $border;
+    border-radius: $border-radius;
+    text-align: center;
+    font-size: var(--font-size-m);
+    letter-spacing: -0.1px;
+    font-weight: bold;
+    border-color: $main-blue;
+    color: $main-blue;
   }
 }

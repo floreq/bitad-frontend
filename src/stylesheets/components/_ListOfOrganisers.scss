@@ -6,12 +6,12 @@ $size: 68px;
     minmax(var(--min-column-width), 1fr)
   );
   .organiser {
-    padding: var(--margin) var(--big-margin);
+    padding: var(--margin-xs) var(--margin);
     .profile {
       display: inline-flex;
       align-items: center;
       text-align: left;
-      margin-bottom: var(--small-margin);
+      margin-bottom: var(--margin-xs);
       p,
       h3 {
         margin: 0 !important;
@@ -19,7 +19,7 @@ $size: 68px;
     }
   }
   .image-wrapper {
-    margin-right: var(--margin);
+    margin-right: var(--margin-xs);
     width: $size;
     height: $size;
     border-radius: 50%;

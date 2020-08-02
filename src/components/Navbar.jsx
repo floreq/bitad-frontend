@@ -23,11 +23,11 @@ function Navbar() {
     <nav className={ifOpen ? "open" : ""}>
       <div className="container">
         <NavLink
-          to={process.env.PUBLIC_URL + "/"}
           className="nav-link"
+          to={process.env.PUBLIC_URL + "/"}
           onClick={onClickLink}
         >
-          <img src={ResetLogo} alt="Reset logo" />
+          <img className="nav-logo" src={ResetLogo} alt="Reset logo" />
         </NavLink>
         <div>
           <div className="nav-links">
@@ -39,7 +39,6 @@ function Navbar() {
             >
               O konferencji
             </NavLink>
-
             <HashLink
               to={process.env.PUBLIC_URL + "/#sponsors"}
               className="nav-link"
@@ -47,7 +46,6 @@ function Navbar() {
             >
               Sponsorzy
             </HashLink>
-
             <NavLink
               to={process.env.PUBLIC_URL + "/agenda"}
               className="nav-link"
@@ -55,7 +53,6 @@ function Navbar() {
             >
               Agenda
             </NavLink>
-
             <NavLink
               to={process.env.PUBLIC_URL + "/rejestracja"}
               className="nav-link button"

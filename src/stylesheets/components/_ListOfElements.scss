@@ -3,15 +3,15 @@
     auto-fill,
     minmax(var(--min-column-width), 1fr)
   );
-  gap: var(--bigger-margin);
+  gap: var(--margin-xl);
   .element {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: var(--big-margin);
+    padding: var(--margin);
     img {
-      height: 2.44rem;
-      margin-bottom: var(--margin);
+      height: 44px;
+      margin-bottom: var(--margin-xs);
     }
   }
 }

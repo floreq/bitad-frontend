@@ -1,6 +1,6 @@
 .list-of-sponsors {
   .sponsors {
-    margin-bottom: calc(var(--margin) + var(--small-margin));
+    margin-bottom: var(--margin);
     align-items: center;
   }
   img {

@@ -1,14 +1,14 @@
 nav {
   position: absolute;
   width: 100%;
-  padding: var(--margin) 0;
+  padding: var(--margin-xs) 0;
   background-color: rgba($white, 0.9);
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  img {
+  .nav-logo {
     height: 36px;
   }
   .active {
@@ -17,11 +17,6 @@ nav {
     &:hover {
       color: $main-black;
       border-color: $main-black;
-    }
-  }
-  .nav-links {
-    a {
-      display: inline;
     }
   }
   .hambuerger {
@@ -48,32 +43,6 @@ nav {
     }
   }
 }
-.open {
-  z-index: 1;
-  height: 100vh;
-  background-color: $main-lgray;
-  .nav-links {
-    display: block;
-    position: absolute;
-    top: 80px;
-    left: var(--margin);
-    a {
-      font-size: var(--xl-font-size);
-      display: block;
-    }
-  }
-  span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-1px, -2px);
-  }
-  span:nth-last-child(1) {
-    transform: rotate(-45deg) translate(-3px, 3px);
-  }
-  span:nth-last-child(2) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.1, 0.1);
-  }
-}
 
 @media all and (max-width: 750px) {
   nav {
@@ -82,6 +51,32 @@ nav {
     }
     .hambuerger {
       display: inline-block;
+    }
+  }
+  .open {
+    z-index: 1;
+    height: 100vh;
+    background-color: $main-lgray;
+    .nav-links {
+      display: block;
+      position: absolute;
+      top: 80px;
+      left: var(--margin-xs);
+      a {
+        font-size: var(--font-size-xl);
+        display: block;
+      }
+    }
+    span {
+      opacity: 1;
+      transform: rotate(45deg) translate(-1px, -2px);
+    }
+    span:nth-last-child(1) {
+      transform: rotate(-45deg) translate(-3px, 3px);
+    }
+    span:nth-last-child(2) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.1, 0.1);
     }
   }
 }

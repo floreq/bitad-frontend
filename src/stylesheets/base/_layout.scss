@@ -1,7 +1,32 @@
 $max-width: 1208px;
 
 :root {
+  --margin-xxs: 8px;
+  --margin-xs: 16px;
+  --margin-m: 24px;
+  --margin: 32px;
+  --margin-l: 40px;
+  --margin-xl: 56px;
+  --margin-xxl: 64px;
+  --margin-xxxl: 88px;
+  --section-margin: 96px;
   --min-column-width: 340px;
+}
+
+@media all and (max-width: 750px) {
+  :root {
+    --margin-m: 16px;
+    --margin: 24px;
+    --margin-l: 32px;
+    --margin-xl: 48px;
+    --margin-xxl: 56px;
+    --margin-xxxl: 80px;
+    --section-margin: 88px;
+  }
+}
+
+header {
+  padding-top: 134px;
 }
 .no-scroll {
   overflow: hidden;
@@ -9,12 +34,16 @@ $max-width: 1208px;
 .container {
   margin: auto;
   max-width: $max-width;
-  padding: 0 var(--margin);
+  padding: 0 var(--margin-xs);
 }
 .two-columns {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-  gap: var(--bigger-margin);
+  gap: var(--margin-xl);
+  // Remove margin-bottom from last child of parent
+  div > :last-child {
+    margin-bottom: 0;
+  }
 }
 .reverse {
   div:last-child {
@@ -26,26 +55,19 @@ $max-width: 1208px;
   text-align: left;
   position: relative;
   left: 50%;
-  margin-left: var(--margin);
+  margin-left: var(--margin-xs);
 }
 section {
   overflow: hidden;
-  padding-bottom: calc(var(--big-margin) * 3);
-  padding-top: var(--bigger-margin);
+  padding-top: var(--margin-xl);
+  padding-bottom: var(--section-margin);
 }
 .list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--big-margin);
+  gap: var(--margin);
   & > div {
     background-color: $white;
-  }
-}
-header {
-  padding-bottom: calc(var(--big-margin) * 3);
-  padding-top: 134px;
-  img {
-    max-height: 333px;
   }
 }
 .event {

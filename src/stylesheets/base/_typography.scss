@@ -1,16 +1,25 @@
 :root {
-  --margin: 18px;
-  --biggest-margin: 108px;
-  --bigger-margin: 54px;
-  --big-margin: 32px;
-  --smaller-margin: 7px;
-  --small-margin: 14px;
+  --root-font-size: 18px;
+  --font-size-xxl: 62px;
+  --line-height-xxl: 70px;
+  --font-size-xl: 48px;
+  --line-height-xl: 56px;
+  --font-size-l: 28px;
+  --line-height-l: 36px;
+  --font-size-m: 24px;
+  --line-height-m: 32px;
+  --font-size-s: 16px;
+  --line-height-s: 24px;
 }
 
 @media all and (max-width: 750px) {
   :root {
-    --biggest-margin: calc(var(--margin) * 2);
-    --big-margin: var(--margin);
+    --font-size-m: 20px;
+    --line-height-m: 28px;
+    --font-size-xxl: 44px;
+    --line-height-xxl: 52px;
+    --font-size-xl: 34px;
+    --line-height-xl: 42px;
   }
 }
 
@@ -24,25 +33,18 @@ a {
 }
 section {
   a {
-    font-size: var(--m-font-size);
+    font-size: var(--font-size-s);
     color: $main-blue;
   }
 }
 .nav-link {
-  margin-right: var(--big-margin);
+  margin-right: var(--margin);
   &:hover {
     color: $main-blue;
   }
   &:last-child {
     margin-right: 0;
   }
-}
-// h1
-.title {
-  line-height: 1.12;
-  font-size: var(--xxl-font-size);
-  letter-spacing: 0.011rem;
-  margin-bottom: calc(var(--big-margin) * 2.7);
 }
 h1,
 h2,
@@ -51,48 +53,45 @@ p {
   margin-top: 0;
 }
 h1 {
-  font-size: var(--xl-font-size);
+  margin-bottom: var(--margin-m);
+  font-size: var(--font-size-xl);
   letter-spacing: 0.045rem;
-  line-height: 1.18;
-  margin-bottom: var(--margin);
+  line-height: var(--line-height-xl);
 }
 h2 {
-  margin-bottom: var(--small-margin);
+  margin-bottom: var(--margin-xs);
+  font-size: var(--font-size-l);
+  line-height: var(--line-height-l);
   font-weight: normal;
   letter-spacing: 0.05rem;
 }
-// h3
-.subtitle {
-  margin-bottom: var(--smaller-margin);
-  line-height: 1.2;
-}
-h3,
-.hero-button {
-  font-size: var(--l-font-size);
+h3 {
+  font-size: var(--font-size-m);
+  line-height: var(--line-height-m);
   letter-spacing: -0.1px;
   font-weight: normal;
 }
 p {
   line-height: 1.9;
+  margin-bottom: var(--margin-xs);
   &:only-of-type {
-    margin-bottom: var(--bigger-margin);
+    margin-bottom: var(--margin-xl);
   }
 }
 .small-p {
-  margin-bottom: var(--big-margin) !important;
-  line-height: 1.6;
+  margin-bottom: var(--margin) !important;
 }
 .small-span,
 .small-p {
-  font-size: var(--m-font-size);
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-s);
 }
 .bold {
   font-weight: bold;
 }
-.button,
-.hero-button {
+.button {
   display: inline-block;
-  padding: var(--smaller-margin) var(--margin);
+  padding: var(--margin-xxs) var(--margin-xs);
   border: $border;
   border-radius: $border-radius;
   text-align: center;
@@ -105,13 +104,6 @@ input {
   line-height: 1.5;
 }
 .button:hover {
-  border-color: $main-blue;
-  color: $main-blue;
-}
-.hero-button {
-  padding-left: var(--big-margin);
-  padding-right: var(--big-margin);
-  font-weight: bold;
   border-color: $main-blue;
   color: $main-blue;
 }
