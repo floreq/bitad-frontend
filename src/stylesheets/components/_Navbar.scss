@@ -58,6 +58,7 @@ nav {
   }
   .open {
     z-index: 1;
+    overflow-y: auto;
     height: 100vh;
     background-color: $main-lgray;
     .nav-links {

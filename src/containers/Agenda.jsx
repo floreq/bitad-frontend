@@ -116,7 +116,7 @@ function Agenda() {
     <React.Fragment>
       <SmallHero />
       <main>
-        <section>
+        <section id="timeline">
           <div className="container center">
             <h1>Agenda</h1>
             <div className="agenda">

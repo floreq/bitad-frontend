@@ -46,13 +46,13 @@ function Navbar() {
             >
               Sponsorzy
             </HashLink>
-            <NavLink
-              to={process.env.PUBLIC_URL + "/agenda"}
+            <HashLink
+              to={process.env.PUBLIC_URL + "/agenda#timeline"}
               className="nav-link"
               onClick={onClickLink}
             >
               Agenda
-            </NavLink>
+            </HashLink>
             <NavLink
               to={process.env.PUBLIC_URL + "/rejestracja"}
               className="nav-link button"
