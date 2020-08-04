@@ -1,7 +1,7 @@
 .list-of-elements {
   grid-template-columns: repeat(
     auto-fill,
-    minmax(var(--min-column-width), 1fr)
+    minmax(var(--footer-min-column), 1fr)
   );
   gap: var(--margin-xl);
   .element {
@@ -13,5 +13,10 @@
       height: 44px;
       margin-bottom: var(--margin-xs);
     }
+  }
+}
+@media all and (max-width: $media-max-width) {
+  .list-of-elements {
+    gap: var(--margin-m);
   }
 }
