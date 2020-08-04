@@ -1,14 +1,13 @@
 $size: 68px;
 
 .list-of-organisers {
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(var(--footer-min-column), 1fr)
-  );
+  grid-template-columns: repeat(auto-fill, minmax(var(--min-column), 1fr));
   .organiser {
     padding: var(--margin-xs) var(--margin-m);
     .profile {
-      display: inline-flex;
+      display: grid;
+      column-gap: var(--margin-xs);
+      grid-template-columns: repeat(2, auto);
       align-items: center;
       text-align: left;
       margin-bottom: var(--margin-xs);
@@ -19,7 +18,7 @@ $size: 68px;
     }
   }
   .image-wrapper {
-    margin-right: var(--margin-xs);
+    justify-self: right;
     width: $size;
     height: $size;
     border-radius: 50%;
