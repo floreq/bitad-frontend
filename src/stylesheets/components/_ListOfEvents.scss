@@ -1,7 +1,7 @@
 .list-of-events {
   grid-template-columns: repeat(auto-fill, minmax(273px, 1fr));
-  gap: var(--margin);
-  margin-bottom: var(--margin);
+  gap: var(--margin-m);
+  margin-bottom: var(--margin-m);
   .event {
     padding: var(--margin-xs);
     .coordinate {

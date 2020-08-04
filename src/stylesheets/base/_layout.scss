@@ -3,8 +3,8 @@ $max-width: 1208px;
 :root {
   --margin-xxs: 8px;
   --margin-xs: 16px;
-  --margin-m: 24px;
-  --margin: 32px;
+  --margin-s: 24px;
+  --margin-m: 32px;
   --margin-l: 40px;
   --margin-xl: 56px;
   --margin-xxl: 64px;
@@ -14,8 +14,8 @@ $max-width: 1208px;
 }
 @media all and (max-width: 750px) {
   :root {
-    --margin-m: 16px;
-    --margin: 24px;
+    --margin-s: 16px;
+    --margin-m: 24px;
     --margin-l: 32px;
     --margin-xl: 48px;
     --margin-xxl: 56px;
@@ -56,7 +56,7 @@ section {
 .list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--margin);
+  gap: var(--margin-m);
   & > div {
     background-color: $white;
   }

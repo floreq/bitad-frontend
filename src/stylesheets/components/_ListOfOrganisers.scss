@@ -6,7 +6,7 @@ $size: 68px;
     minmax(var(--min-column-width), 1fr)
   );
   .organiser {
-    padding: var(--margin-xs) var(--margin);
+    padding: var(--margin-xs) var(--margin-m);
     .profile {
       display: inline-flex;
       align-items: center;

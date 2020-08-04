@@ -1,44 +1,64 @@
 .registration {
   padding-top: calc(var(--margin-xl) * 2 + var(--margin-xxs));
-  background: url(../../assets/images/registration-bg.svg);
+  background: url(../../assets/images/registration-bg1.svg);
   background-position: center top;
   background-size: 85.27rem auto;
   background-repeat: no-repeat;
   .two-columns {
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(auto-fill, minmax(380px, auto));
   }
   .introduction {
-    h1 {
-      margin-bottom: var(--margin);
+    p {
+      margin-bottom: var(--margin-xl);
     }
   }
   form {
-    label {
-      margin-right: var(--margin-xs);
-      margin-bottom: var(--margin-xs);
-      display: inline-block;
-    }
-    input {
-      margin-top: var(--margin-xxs);
-      padding: var(--margin-xxs) var(--margin-xs);
-      border: $border;
-      display: block;
-    }
-    a {
-      margin-left: var(--margin-xxs);
+    .personal-info {
+      margin-bottom: var(--margin-m);
+      .field-wrapper {
+        margin-bottom: var(--margin-xs);
+        &:last-child {
+          margin-bottom: 0;
+        }
+        label {
+          margin-right: var(--margin-xs);
+          width: calc(50% - var(--margin-xxs));
+          display: inline-block;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+        input {
+          margin-top: var(--margin-xxs);
+          padding: var(--margin-xxs) var(--margin-xs);
+          width: calc(100% - (var(--margin-xs) + #{$border-size}) * 2);
+          border: $border;
+          display: block;
+        }
+      }
+      .full-size-field {
+        label {
+          width: 100%;
+        }
+      }
     }
   }
-  .checkbox {
+  .checkbox-wrapper {
+    margin-bottom: var(--margin-s);
+    &:last-child {
+      margin-bottom: var(--margin-xl);
+    }
     input[type="checkbox"] {
       opacity: 0;
       margin: 0;
+      width: 0;
       height: 0;
     }
     label {
+      line-height: 1.9;
       position: relative;
       display: inline-block;
       padding-left: calc(var(--margin-xs) + var(--margin-xs));
-      margin-bottom: var(--margin);
       &::before,
       &::after {
         position: absolute;
@@ -46,20 +66,20 @@
         display: inline-block;
       }
       &::before {
-        height: 0.888rem;
-        width: 0.888rem;
-        top: 0.111rem;
+        height: 16px;
+        width: 16px;
+        top: 7px;
         left: 0;
         border: $border;
       }
       &::after {
-        height: 0.277rem;
-        width: 0.5rem;
+        height: 5px;
+        width: 9px;
         border-left: $border;
         border-bottom: $border;
         transform: rotate(-45deg);
-        left: 0.223rem;
-        top: 0.388rem;
+        left: 4px;
+        top: 12px;
       }
     }
     input[type="checkbox"] + label::after {
@@ -69,17 +89,24 @@
       content: "";
     }
     input[type="checkbox"]:focus + label::before {
-      outline: rgb(59, 153, 252) auto 5px;
+      outline: auto;
     }
   }
-  img {
+  .registration-image {
     justify-self: flex-end;
     align-self: center;
+    max-height: 333px;
+    max-width: 400px;
     width: 100%;
   }
-  @media all and (max-width: 750px) {
-    img {
+  @media all and (max-width: 864px) {
+    .registration-image {
       display: none;
+    }
+  }
+  @media all and (max-width: 450px) {
+    .two-columns {
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     }
   }
 }

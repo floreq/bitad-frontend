@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { HashLink as Link } from "react-router-hash-link";
 import BitadLogo from "./../assets/images/bitad-logo.svg";
 import Footer from "../components/Footer";
 
@@ -57,82 +56,99 @@ class Registration extends Component {
             <div className="container two-columns">
               <div>
                 <div className="introduction">
-                  <h3 className="subtitle">{process.env.REACT_APP_SUBTITLE}</h3>
                   <h1>Rejestracja na konferencję</h1>
+                  <p>{process.env.REACT_APP_SUBTITLE}</p>
                 </div>
                 <form onSubmit={this.handleSubmit}>
-                  <div className="name">
-                    <label>
-                      Imię
-                      <input
-                        type="text"
-                        name="name"
-                        value={this.state.form.name.value}
-                        onChange={this.handleChange}
-                      />
-                    </label>
-                    <label>
-                      Nazwisko
-                      <input
-                        type="text"
-                        name="surname"
-                        value={this.state.form.surname.value}
-                        onChange={this.handleChange}
-                      />
-                    </label>
+                  <div className="personal-info">
+                    <div className="field-wrapper">
+                      <label>
+                        Imię
+                        <input
+                          type="text"
+                          name="name"
+                          value={this.state.form.name.value}
+                          onChange={this.handleChange}
+                        />
+                      </label>
+                      <label>
+                        Nazwisko
+                        <input
+                          type="text"
+                          name="surname"
+                          value={this.state.form.surname.value}
+                          onChange={this.handleChange}
+                        />
+                      </label>
+                    </div>
+                    <div className="field-wrapper full-size-field">
+                      <label>
+                        Adres e-mail
+                        <input
+                          type="email"
+                          name="email"
+                          value={this.state.form.email.value}
+                          onChange={this.handleChange}
+                        />
+                      </label>
+                    </div>
+                    <div className="field-wrapper">
+                      <label>
+                        Hasło
+                        <input
+                          type="password"
+                          name="password"
+                          value={this.state.form.password.value}
+                          onChange={this.handleChange}
+                        />
+                      </label>
+                      <label>
+                        Powtórz hasło
+                        <input
+                          type="password"
+                          name="rpassword"
+                          value={this.state.form.rpassword.value}
+                          onChange={this.handleChange}
+                        />
+                      </label>
+                    </div>
                   </div>
-                  <div className="email">
-                    <label>
-                      Adres e-mail
+                  <div className="terms">
+                    <div className="checkbox-wrapper">
                       <input
-                        type="email"
-                        name="email"
-                        value={this.state.form.email.value}
+                        type="checkbox"
+                        id="checkbox1"
+                        name="terms"
+                        checked={this.state.form.terms.value}
                         onChange={this.handleChange}
                       />
-                    </label>
-                  </div>
-                  <div className="password">
-                    <label>
-                      Hasło
-                      <Link to="/">
-                        (Dlaczego prosimy Ciebie o podanie hasła?)
-                      </Link>
+                      <label htmlFor="checkbox1">
+                        Zapoznałem/am się z Polityką Prywatności oraz z
+                        Regulaminem.
+                      </label>
+                    </div>
+                    <div className="checkbox-wrapper">
                       <input
-                        type="password"
-                        name="password"
-                        value={this.state.form.password.value}
+                        type="checkbox"
+                        id="checkbox2"
+                        name="terms"
+                        checked={this.state.form.terms.value}
                         onChange={this.handleChange}
                       />
-                    </label>
-                  </div>
-                  <div className="password">
-                    <label>
-                      Powtórz hasło
-                      <input
-                        type="password"
-                        name="rpassword"
-                        value={this.state.form.rpassword.value}
-                        onChange={this.handleChange}
-                      />
-                    </label>
-                  </div>
-                  <div className="checkbox">
-                    <input
-                      type="checkbox"
-                      id="checkbox"
-                      name="terms"
-                      checked={this.state.form.terms.value}
-                      onChange={this.handleChange}
-                    />
-                    <label htmlFor="checkbox">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </label>
+                      <label htmlFor="checkbox2">
+                        Wyrażam zgodę na przetwarzanie moich danych osobowych
+                        dla potrzeb niezbędnych do udziału w konferencji.
+                      </label>
+                    </div>
                   </div>
                   <input className="button" type="submit" value="Zapisz się" />
                 </form>
               </div>
-              <img src={BitadLogo} alt="Bitad logo" />
+              <img
+                className="registration-image"
+                src={BitadLogo}
+                alt="Bitad logo"
+              />
             </div>
           </section>
         </main>
