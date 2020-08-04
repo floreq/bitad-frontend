@@ -11,7 +11,8 @@ $media-max-width: 750px;
   --margin-xxl: 64px;
   --margin-xxxl: 88px;
   --section-margin: 96px;
-  --min-column: 380px;
+  --two-min-column: 380px;
+  --three-min-column: 360px;
   --footer-min-column: 340px;
   --header-margin-top: 134px;
 }
@@ -38,7 +39,7 @@ header {
 }
 .two-columns {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--min-column), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(var(--two-min-column), 1fr));
   gap: var(--margin-xl);
   // Remove margin-bottom from last child of parent
   div > :last-child {
@@ -94,6 +95,7 @@ section {
 @media all and (max-width: 450px) {
   :root {
     --footer-min-column: 267px;
-    --min-column: 260px;
+    --two-min-column: 260px;
+    --three-min-column: var(--two-min-column);
   }
 }

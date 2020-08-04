@@ -5,7 +5,10 @@
   background-size: 1535px auto;
   background-repeat: no-repeat;
   .two-columns {
-    grid-template-columns: repeat(auto-fill, minmax(var(--min-column), auto));
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(var(--two-min-column), auto)
+    );
   }
   .introduction {
     p {
