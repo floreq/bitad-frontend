@@ -13,6 +13,7 @@ $media-max-width: 750px;
   --section-margin: 96px;
   --min-column: 380px;
   --footer-min-column: 340px;
+  --header-margin-top: 134px;
 }
 @media all and (max-width: $media-max-width) {
   :root {
@@ -27,7 +28,7 @@ $media-max-width: 750px;
 }
 
 header {
-  padding-top: 134px;
+  padding-top: var(--header-margin-top);
   padding-bottom: var(--section-margin);
 }
 .container {

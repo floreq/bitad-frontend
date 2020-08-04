@@ -11,14 +11,13 @@ nav {
   .nav-logo {
     height: 36px;
   }
-  .active {
-    color: $main-blue;
-    border-color: $main-blue;
-    &:hover {
-      color: $main-black;
-      border-color: $main-black;
-    }
-  }
+  // .active {
+  //   color: $main-blue;
+  //   border-color: $main-blue;
+  //   &::after {
+  //     background-color: $main-blue !important;
+  //   }
+  // }
   .hambuerger {
     display: none;
     span {
@@ -64,11 +63,33 @@ nav {
     .nav-links {
       display: block;
       position: absolute;
-      top: 80px;
+      top: var(--header-margin-top);
       left: var(--margin-xs);
       a {
-        font-size: var(--font-size-xl);
         display: block;
+        margin-bottom: 40px;
+        font-size: var(--font-size-xl);
+        line-height: var(--line-height-xl);
+        font-weight: bold;
+      }
+    }
+    .button {
+      padding: 0;
+      border: none;
+      text-align: left;
+      position: relative;
+      &::after {
+        position: absolute;
+        top: 20px;
+        right: 36px;
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+        background-color: $main-black;
+      }
+      &:hover::after {
+        background-color: $main-blue;
       }
     }
     span {

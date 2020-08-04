@@ -33,6 +33,8 @@
           padding: var(--margin-xxs) var(--margin-xs);
           width: calc(100% - (var(--margin-xs) + #{$border-size}) * 2);
           border: $border;
+          box-shadow: none;
+          border-radius: 0;
           display: block;
         }
       }
