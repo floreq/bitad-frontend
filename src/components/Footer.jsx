@@ -28,18 +28,21 @@ function Footer() {
         <div className="footer-list">
           <div>
             <h3>Reset</h3>
-            <Link to={process.env.PUBLIC_URL + "/"} className="nav-link">
+            <Link className="nav-link" to={process.env.PUBLIC_URL + "/"}>
               O konferencji
             </Link>
             <HashLink
-              to={process.env.PUBLIC_URL + "/#sponsors"}
               className="nav-link"
+              to={process.env.PUBLIC_URL + "/#sponsors"}
             >
               Sponsorzy
             </HashLink>
-            <Link to={process.env.PUBLIC_URL + "/agenda"} className="nav-link">
+            <HashLink
+              className="nav-link"
+              to={process.env.PUBLIC_URL + "/agenda#timeline"}
+            >
               Agenda
-            </Link>
+            </HashLink>
           </div>
           <div>
             <h3>Patroni</h3>
