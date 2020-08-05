@@ -29,16 +29,16 @@ $border-radius: 0.6666rem;
 $box-shadow: 0px 12.4px 49.3px 0px rgba(0, 0, 0, 0.24);
 
 a {
-  color: $main-black;
+  color: $main-blue;
   text-decoration: none;
 }
-section {
+.list {
   a {
     font-size: var(--font-size-s);
-    color: $main-blue;
   }
 }
 .nav-link {
+  color: $main-black;
   margin-right: var(--margin-m);
   &:hover {
     color: $main-blue;

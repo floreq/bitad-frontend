@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function ListOfElements(props) {
-  const list = props.listElements.map(e => {
+  const list = props.listElements.map((e) => {
     return (
       <div key={e.id} className="element shadow">
         <div>
@@ -10,7 +10,9 @@ function ListOfElements(props) {
           <h2>{e.title}</h2>
           <p className="small-p">{e.description}</p>
         </div>
-        <Link to={e.fintOutMore}>Dowiedz się więcej</Link>
+        <HashLink to={process.env.PUBLIC_URL + e.fintOutMore}>
+          Dowiedz się więcej
+        </HashLink>
       </div>
     );
   });

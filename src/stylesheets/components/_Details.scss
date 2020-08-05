@@ -1,0 +1,25 @@
+.details {
+  section:not(:first-child) {
+    padding-top: 0;
+  }
+  section:not(:last-child) {
+    padding-bottom: var(--margin-xxl);
+  }
+  p:last-of-type {
+    margin-bottom: var(--margin-m);
+  }
+  h2 {
+    font-weight: bold;
+  }
+  ul {
+    margin: 0;
+    padding-left: 20px;
+    li {
+      margin-bottom: var(--margin-xs);
+      line-height: 1.9;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

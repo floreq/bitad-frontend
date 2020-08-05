@@ -16,25 +16,25 @@ function Conference() {
       title: "Powitalnej paczki",
       description:
         "Dlatego każdy z Was zaraz po potwierdzeniu swojej obecności na konferencji będzie czekała powitalna paczka.",
-      fintOutMore: "/",
+      fintOutMore: "/details#gift",
     },
     {
       id: 2,
       image: "/images/keyboard.svg",
-      alt: "Prezent",
+      alt: "Klawiatura",
       title: "Warsztatów",
       description:
         "Warsztaty mają na celu zaprezentowanie podstaw tematów będących na czasie w praktyce.",
-      fintOutMore: "/",
+      fintOutMore: "/details#workshops",
     },
     {
       id: 3,
       image: "/images/gamepad.svg",
-      alt: "Prezent",
+      alt: "Kontroler",
       title: "Gry QR Code",
       description:
         "Baw się z nami i zdobywaj punkty podczas udziału w prelekcjach i warsztatach. ",
-      fintOutMore: "/",
+      fintOutMore: "/details#game",
     },
   ];
   const listSponsors = [
