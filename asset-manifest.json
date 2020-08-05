@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/bitad-frontend/static/css/main.0e86d31a.chunk.css",
-    "main.js": "/bitad-frontend/static/js/main.176bb6a2.chunk.js",
-    "main.js.map": "/bitad-frontend/static/js/main.176bb6a2.chunk.js.map",
+    "main.css": "/bitad-frontend/static/css/main.36ed8b73.chunk.css",
+    "main.js": "/bitad-frontend/static/js/main.09b61710.chunk.js",
+    "main.js.map": "/bitad-frontend/static/js/main.09b61710.chunk.js.map",
     "runtime-main.js": "/bitad-frontend/static/js/runtime-main.ac5881ed.js",
     "runtime-main.js.map": "/bitad-frontend/static/js/runtime-main.ac5881ed.js.map",
-    "static/js/2.ab95ed30.chunk.js": "/bitad-frontend/static/js/2.ab95ed30.chunk.js",
-    "static/js/2.ab95ed30.chunk.js.map": "/bitad-frontend/static/js/2.ab95ed30.chunk.js.map",
+    "static/js/2.281d7228.chunk.js": "/bitad-frontend/static/js/2.281d7228.chunk.js",
+    "static/js/2.281d7228.chunk.js.map": "/bitad-frontend/static/js/2.281d7228.chunk.js.map",
     "index.html": "/bitad-frontend/index.html",
-    "precache-manifest.cec96e30e3a0ebf736ba64bdb1294c6f.js": "/bitad-frontend/precache-manifest.cec96e30e3a0ebf736ba64bdb1294c6f.js",
+    "precache-manifest.9252690f312c4e4f3292fd826b2f7750.js": "/bitad-frontend/precache-manifest.9252690f312c4e4f3292fd826b2f7750.js",
     "service-worker.js": "/bitad-frontend/service-worker.js",
-    "static/css/main.0e86d31a.chunk.css.map": "/bitad-frontend/static/css/main.0e86d31a.chunk.css.map",
-    "static/js/2.ab95ed30.chunk.js.LICENSE.txt": "/bitad-frontend/static/js/2.ab95ed30.chunk.js.LICENSE.txt",
+    "static/css/main.36ed8b73.chunk.css.map": "/bitad-frontend/static/css/main.36ed8b73.chunk.css.map",
+    "static/js/2.281d7228.chunk.js.LICENSE.txt": "/bitad-frontend/static/js/2.281d7228.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/bitad-frontend/static/media/timeline-bar.92784b12.svg",
     "static/media/bitad-logo.svg": "/bitad-frontend/static/media/bitad-logo.932e65f6.svg",
     "static/media/fb-logo.svg": "/bitad-frontend/static/media/fb-logo.9dadae0b.svg",
@@ -23,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ac5881ed.js",
-    "static/js/2.ab95ed30.chunk.js",
-    "static/css/main.0e86d31a.chunk.css",
-    "static/js/main.176bb6a2.chunk.js"
+    "static/js/2.281d7228.chunk.js",
+    "static/css/main.36ed8b73.chunk.css",
+    "static/js/main.09b61710.chunk.js"
   ]
 }
