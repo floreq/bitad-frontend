@@ -114,6 +114,11 @@ p {
   border-color: $main-blue;
   color: $main-blue;
 }
+.show-more {
+  font-size: var(--font-size-s);
+  color: $main-blue;
+  border: none;
+}
 .button {
   display: inline-block;
   padding: var(--margin-xxs) var(--margin-xs);

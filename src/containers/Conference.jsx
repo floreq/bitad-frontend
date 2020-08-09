@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 import ListOfElements from "../components/ListOfElements";
 import ListOfSponsors from "../components/ListOfSponsors";
-import ListOfOrganisers from "../components/ListOfOrganisers";
+import ListOfOrganizers from "../components/ListOfOrganizers";
 import Lectures from "./../assets/images/lectures.jpg";
 import Workshop from "./../assets/images/workshop.jpg";
 
@@ -155,6 +155,26 @@ function Conference() {
       alt: "",
     },
   ];
+
+  const [organizersError, setOrganizersError] = useState(null);
+  const [isOrganizersLoaded, setIsOrganizersLoaded] = useState(false);
+  const [organizers, setOrganizers] = useState([]);
+
+  useEffect(() => {
+    fetch("http://137.74.99.192/wp-json/wp/v2/organizers")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          setIsOrganizersLoaded(true);
+          setOrganizers(result);
+        },
+        (error) => {
+          setIsOrganizersLoaded(true);
+          setOrganizersError(error);
+        }
+      );
+  }, []);
+
   return (
     <React.Fragment>
       <Hero />
@@ -242,7 +262,12 @@ function Conference() {
               aby to piątkowe spotkanie było przede wszystkim. Mile spędzonym
               czasem, dlatego wzbogaciliśmy konferencję o dodatkowe atrakcje.
             </p>
-            <ListOfOrganisers listOrganisers={listOrganisers} />
+            <ListOfOrganizers
+              listOrganisers={listOrganisers}
+              organizers={organizers}
+              error={organizersError}
+              isLoaded={isOrganizersLoaded}
+            />
           </div>
         </section>
       </main>
