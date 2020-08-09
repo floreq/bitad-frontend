@@ -10,7 +10,7 @@ function Navbar() {
     if (e) {
       html.className = "no-scroll";
     } else {
-      html.className = "";
+      html.classList.remove("no-scroll");
     }
   };
   const onClickLink = () => {

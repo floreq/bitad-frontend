@@ -5,6 +5,7 @@ $size: 68px;
     auto-fill,
     minmax(var(--three-min-column), 1fr)
   );
+  grid-auto-rows: minmax(228px, auto);
   .organizer {
     height: 196px;
     display: flex;
@@ -26,6 +27,13 @@ $size: 68px;
     .descritpion {
       height: 48px;
       overflow: hidden;
+    }
+  }
+  .more {
+    grid-row-end: span 3;
+    height: auto;
+    .descritpion {
+      height: auto;
     }
   }
   .image-wrapper {
