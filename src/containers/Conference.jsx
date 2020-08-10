@@ -106,7 +106,7 @@ function Conference() {
       name: "Sebastian",
       surname: "Kowalski",
       description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
-      image: "/images/organisers/sebastian-kowalski.jpg",
+      image: "/images/organizers/sebastian-kowalski.jpg",
       alt: "",
     },
     {
@@ -115,7 +115,7 @@ function Conference() {
       name: "Sebastian",
       surname: "Kowalski",
       description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
-      image: "/images/organisers/sebastian-kowalski.jpg",
+      image: "/images/organizers/sebastian-kowalski.jpg",
       alt: "",
     },
     {
@@ -124,7 +124,7 @@ function Conference() {
       name: "Sebastian",
       surname: "Kowalski",
       description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
-      image: "/images/organisers/sebastian-kowalski.jpg",
+      image: "/images/organizers/sebastian-kowalski.jpg",
       alt: "",
     },
     {
@@ -133,7 +133,7 @@ function Conference() {
       name: "Sebastian",
       surname: "Kowalski",
       description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
-      image: "/images/organisers/sebastian-kowalski.jpg",
+      image: "/images/organizers/sebastian-kowalski.jpg",
       alt: "",
     },
     {
@@ -142,7 +142,7 @@ function Conference() {
       name: "Sebastian",
       surname: "Kowalski",
       description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
-      image: "/images/organisers/sebastian-kowalski.jpg",
+      image: "/images/organizers/sebastian-kowalski.jpg",
       alt: "",
     },
     {
@@ -151,7 +151,7 @@ function Conference() {
       name: "Sebastian",
       surname: "Kowalski",
       description: "Opiekun koła Reset oraz prelegent w lokalnej bibliotece.",
-      image: "/images/organisers/sebastian-kowalski.jpg",
+      image: "/images/organizers/sebastian-kowalski.jpg",
       alt: "",
     },
   ];
@@ -161,7 +161,7 @@ function Conference() {
   const [organizers, setOrganizers] = useState([]);
 
   useEffect(() => {
-    fetch("http://137.74.99.192/wp-json/wp/v2/organizers")
+    fetch(process.env.REACT_APP_BACKEND + "wp-json/wp/v2/organizers")
       .then((res) => res.json())
       .then(
         (result) => {
@@ -174,7 +174,7 @@ function Conference() {
         }
       );
   }, []);
-
+  console.log(process.env.REACT_APP_BACKEND + "wp-json/wp/v2/organizers");
   return (
     <React.Fragment>
       <Hero />

@@ -46,13 +46,13 @@ function Navbar() {
             >
               Sponsorzy
             </HashLink>
-            <HashLink
+            <NavLink
               to={process.env.PUBLIC_URL + "/agenda#timeline"}
               className="nav-link"
               onClick={onClickLink}
             >
               Agenda
-            </HashLink>
+            </NavLink>
             <NavLink
               to={process.env.PUBLIC_URL + "/rejestracja"}
               className="nav-link button"
@@ -68,9 +68,7 @@ function Navbar() {
               noScroll(!ifOpen);
             }}
           >
-            <span></span>
-            <span></span>
-            <span></span>
+            <div className="hamburger-inner"></div>
           </div>
         </div>
       </div>
