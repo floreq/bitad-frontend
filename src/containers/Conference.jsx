@@ -60,6 +60,24 @@ function Conference() {
           alt: "4experience",
           link: "/",
         },
+        {
+          id: 4,
+          image: "/images/sponsors/imgnpro.svg",
+          alt: "next",
+          link: "/",
+        },
+        {
+          id: 5,
+          image: "/images/sponsors/rekord.svg",
+          alt: "iteo",
+          link: "/",
+        },
+        {
+          id: 6,
+          image: "/images/sponsors/nav24.svg",
+          alt: "4experience",
+          link: "/",
+        },
       ],
     },
     {
@@ -74,6 +92,30 @@ function Conference() {
         },
         {
           id: 2,
+          image: "/images/sponsors/nav24.svg",
+          alt: "nav24",
+          link: "/",
+        },
+        {
+          id: 3,
+          image: "/images/sponsors/imgnpro.svg",
+          alt: "rekord",
+          link: "/",
+        },
+        {
+          id: 4,
+          image: "/images/sponsors/4experience.svg",
+          alt: "nav24",
+          link: "/",
+        },
+        {
+          id: 5,
+          image: "/images/sponsors/next.svg",
+          alt: "rekord",
+          link: "/",
+        },
+        {
+          id: 6,
           image: "/images/sponsors/nav24.svg",
           alt: "nav24",
           link: "/",
@@ -93,6 +135,30 @@ function Conference() {
         {
           id: 2,
           image: "/images/sponsors/helion.svg",
+          alt: "helion",
+          link: "/",
+        },
+        {
+          id: 3,
+          image: "/images/sponsors/nav24.svg",
+          alt: "imgnpro",
+          link: "/",
+        },
+        {
+          id: 4,
+          image: "/images/sponsors/4experience.svg",
+          alt: "helion",
+          link: "/",
+        },
+        {
+          id: 5,
+          image: "/images/sponsors/rekord.svg",
+          alt: "imgnpro",
+          link: "/",
+        },
+        {
+          id: 6,
+          image: "/images/sponsors/next.svg",
           alt: "helion",
           link: "/",
         },
@@ -156,25 +222,45 @@ function Conference() {
     },
   ];
 
+  // Organizers
   const [organizersError, setOrganizersError] = useState(null);
   const [isOrganizersLoaded, setIsOrganizersLoaded] = useState(false);
   const [organizers, setOrganizers] = useState([]);
-
+  // Pull from API
   useEffect(() => {
     fetch(process.env.REACT_APP_BACKEND + "wp-json/wp/v2/organizers")
       .then((res) => res.json())
       .then(
         (result) => {
-          setIsOrganizersLoaded(true);
           setOrganizers(result);
+          setIsOrganizersLoaded(true);
         },
         (error) => {
-          setIsOrganizersLoaded(true);
           setOrganizersError(error);
+          setIsOrganizersLoaded(true);
         }
       );
   }, []);
-  console.log(process.env.REACT_APP_BACKEND + "wp-json/wp/v2/organizers");
+  // Fetch Sponsors
+  const [sponsorsError, setSponsorsError] = useState(null);
+  const [isSponsorsLoaded, setIsSponsorsLoaded] = useState(false);
+  const [sponsors, setSponsors] = useState([]);
+  // Pull from API
+  useEffect(() => {
+    fetch(process.env.REACT_APP_BACKEND + "wp-json/wp/v2/sponsors")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          setSponsors(result);
+          setIsSponsorsLoaded(true);
+        },
+        (error) => {
+          setSponsorsError(error);
+          setIsSponsorsLoaded(true);
+        }
+      );
+  }, []);
+
   return (
     <React.Fragment>
       <Hero />
@@ -230,7 +316,12 @@ function Conference() {
         <section id="sponsors" className="half-neutral">
           <div className="container two-columns reverse">
             <div>
-              <ListOfSponsors listSponsors={listSponsors} />
+              <ListOfSponsors
+                listSponsors={listSponsors}
+                sponsors={sponsors}
+                error={sponsorsError}
+                isLoaded={isSponsorsLoaded}
+              />
             </div>
             <div>
               <h1>

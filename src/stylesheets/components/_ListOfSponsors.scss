@@ -1,5 +1,6 @@
 .list-of-sponsors {
   .sponsors {
+    grid-template-columns: repeat(auto-fit, minmax(123px, auto));
     margin-bottom: var(--margin-m);
     align-items: center;
   }
