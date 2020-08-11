@@ -1,0 +1,33 @@
+$main-black: #16334f;
+$main-blue: #4093cd;
+$main-lgray: #f2f2f2;
+$white: #fff;
+$green: #0ad18f;
+$pink: #e5007e;
+$purple: #6e03e4;
+
+@mixin color($e) {
+  background-color: rgba($e, 0.22);
+  border-color: $e;
+}
+@mixin lightColor($e) {
+  background-color: rgba($e, 0.12);
+}
+.green {
+  @include color($green);
+}
+.light-green {
+  @include lightColor($green);
+}
+.pink {
+  @include color($pink);
+}
+.light-pink {
+  @include lightColor($pink);
+}
+.purple {
+  @include color($purple);
+}
+.light-purple {
+  @include lightColor($purple);
+}

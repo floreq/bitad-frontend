@@ -1,0 +1,10 @@
+.hero {
+  background-image: url("./../../assets/images/hero-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto 760px;
+  text-align: center;
+  .hero-image {
+    margin-bottom: var(--margin-xxl);
+  }
+}

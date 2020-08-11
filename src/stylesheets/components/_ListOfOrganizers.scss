@@ -1,0 +1,37 @@
+$size: 68px;
+
+.list-of-organizers {
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--three-min-column), 1fr)
+  );
+  .organizer {
+    padding: var(--margin-m);
+    .profile {
+      display: grid;
+      column-gap: var(--margin-xs);
+      grid-template-columns: repeat(2, auto);
+      align-items: center;
+      text-align: left;
+      margin-bottom: var(--margin-xs);
+      p,
+      h3 {
+        margin: 0 !important;
+      }
+    }
+    .descritpion {
+      margin-bottom: 0 !important;
+    }
+  }
+  .image-wrapper {
+    justify-self: right;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: $size;
+      height: $size;
+    }
+  }
+}

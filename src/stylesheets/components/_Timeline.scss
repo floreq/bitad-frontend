@@ -1,0 +1,86 @@
+$event-border-radius: 3.666rem;
+
+.timeline-wrapper {
+  margin-bottom: var(--section-margin);
+  .timeline {
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
+    margin-right: calc(var(--margin-m) * -5);
+    margin-left: calc(var(--margin-m) * -5);
+    margin-bottom: var(--margin-m);
+    padding-right: calc(var(--margin-m) * 5);
+    padding-left: calc(var(--margin-m) * 5);
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba($main-lgray, 1) 10%,
+      rgba($main-lgray, 1) 50%,
+      rgba($main-lgray, 1) 90%,
+      rgba(255, 255, 255, 0.9) 100%
+    );
+    background-size: auto;
+    background-repeat: no-repeat;
+    .timeline-scroll {
+      overflow-x: auto;
+      .timeline-time {
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        margin-bottom: var(--margin-xxs);
+        width: $max-width;
+        // Biale tlo paska z czasem
+        &::before {
+          z-index: -1;
+          content: "";
+          background-color: $white;
+          height: 60px;
+          width: 100%;
+          left: 0;
+          position: absolute;
+          margin-top: -31px;
+        }
+        span {
+          font-size: 1rem;
+          justify-self: center;
+          &:first-child {
+            justify-self: flex-start !important;
+          }
+          &:last-child {
+            justify-self: flex-end !important;
+          }
+        }
+      }
+      .timeline-events {
+        display: grid;
+        grid-template-columns: repeat(27, 1fr);
+        margin-bottom: 32px; // can not be var(--margin-m)
+        width: $max-width;
+        background-size: 7.447rem;
+        background-image: url("./../../assets/images/timeline-bar.svg");
+        background-repeat: repeat;
+        background-position: left;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .event {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          height: 68px;
+          display: flex;
+          align-items: center;
+          border-radius: $event-border-radius;
+        }
+        .break-left {
+          border-radius: $event-border-radius 0 0 $event-border-radius;
+        }
+        .break-right {
+          grid-column-start: 1 !important;
+          border-radius: 0 $event-border-radius $event-border-radius 0;
+          .image-wrapper {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

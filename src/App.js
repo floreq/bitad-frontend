@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
+import Conference from "./containers/Conference";
+import Agenda from "./containers/Agenda";
+import Registration from "./containers/Registration";
+import Details from "./containers/Details";
+import "./stylesheets/main.scss";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <ScrollToTop />
+      <Switch>
+        <Route exact path={process.env.PUBLIC_URL + "/"}>
+          <Conference />
+        </Route>
+        <Route path={process.env.PUBLIC_URL + "/agenda"}>
+          <Agenda />
+        </Route>
+        <Route path={process.env.PUBLIC_URL + "/rejestracja"}>
+          <Registration />
+        </Route>
+        <Route path={process.env.PUBLIC_URL + "/details"}>
+          <Details />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

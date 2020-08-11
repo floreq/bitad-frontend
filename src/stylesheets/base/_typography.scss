@@ -1,0 +1,142 @@
+:root {
+  --root-font-size: 18px;
+  --font-size-xxl: 62px;
+  --line-height-xxl: 70px;
+  --font-size-xl: 48px;
+  --line-height-xl: 56px;
+  --font-size-l: 28px;
+  --line-height-l: 36px;
+  --font-size-m: 24px;
+  --line-height-m: 32px;
+  --font-size-s: 16px;
+  --line-height-s: 24px;
+}
+
+@media all and (max-width: 750px) {
+  :root {
+    --font-size-m: 20px;
+    --line-height-m: 28px;
+    --font-size-xxl: 44px;
+    --line-height-xxl: 52px;
+    --font-size-xl: 34px;
+    --line-height-xl: 42px;
+  }
+}
+
+$border-size: 2px;
+$border: solid $border-size $main-black;
+$border-radius: 0.6666rem;
+$box-shadow: 0px 12.4px 49.3px 0px rgba(0, 0, 0, 0.24);
+
+a {
+  color: $main-blue;
+  text-decoration: none;
+}
+.list {
+  a {
+    font-size: var(--font-size-s);
+  }
+}
+.nav-link {
+  color: $main-black;
+  margin-right: var(--margin-m);
+  &:hover {
+    color: $main-blue;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+h1 {
+  margin-bottom: var(--margin-s);
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.045rem;
+  line-height: var(--line-height-xl);
+}
+h2 {
+  margin-bottom: var(--margin-xs);
+  font-size: var(--font-size-l);
+  line-height: var(--line-height-l);
+  font-weight: normal;
+  letter-spacing: 0.05rem;
+}
+h3 {
+  font-size: var(--font-size-m);
+  line-height: var(--line-height-m);
+  letter-spacing: -0.1px;
+  font-weight: normal;
+}
+p {
+  line-height: 1.9;
+  margin-bottom: var(--margin-xs);
+  &:only-of-type {
+    margin-bottom: var(--margin-xl);
+  }
+}
+.small-p {
+  margin-bottom: var(--margin-m) !important;
+}
+.small-span,
+.small-p {
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-s);
+}
+.bold {
+  font-weight: bold;
+}
+.title {
+  line-height: var(--line-height-xxl);
+  font-size: var(--font-size-xxl);
+  letter-spacing: 0.2px;
+  margin-bottom: var(--section-margin);
+}
+.subtitle {
+  margin-bottom: var(--margin-l);
+}
+.hero-image {
+  max-height: 333px;
+}
+.hero-button {
+  display: inline-block;
+  padding: var(--margin-xxs) var(--margin-m);
+  border: $border;
+  border-radius: $border-radius;
+  text-align: center;
+  font-size: var(--font-size-m);
+  letter-spacing: -0.1px;
+  font-weight: bold;
+  border-color: $main-blue;
+  color: $main-blue;
+}
+.show-more {
+  font-size: var(--font-size-s);
+  color: $main-blue;
+  border: none;
+}
+.button {
+  display: inline-block;
+  padding: var(--margin-xxs) var(--margin-xs);
+  border: $border;
+  border-radius: $border-radius;
+  text-align: center;
+}
+button,
+input {
+  color: $main-black;
+  background: none;
+  font-size: var(--root-font-size);
+  line-height: 1.5;
+}
+.button:hover {
+  border-color: $main-blue;
+  color: $main-blue;
+}
+.shadow {
+  box-shadow: $box-shadow;
+}

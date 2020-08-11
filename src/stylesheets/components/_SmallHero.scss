@@ -1,0 +1,15 @@
+.small-hero {
+  background-image: url("./../../assets/images/small-hero-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto 28.3rem;
+}
+
+@media all and (max-width: 864px) {
+  .small-hero {
+    .two-columns {
+      row-gap: var(--margin-xxl);
+    }
+    text-align: center;
+  }
+}

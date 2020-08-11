@@ -1,0 +1,113 @@
+.registration {
+  padding-top: calc(var(--margin-xl) * 2 + var(--margin-xxs));
+  background: url(../../assets/images/registration-bg1.svg);
+  background-position: center top;
+  background-size: 1535px auto;
+  background-repeat: no-repeat;
+  .two-columns {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(var(--two-min-column), auto)
+    );
+  }
+  .introduction {
+    p {
+      margin-bottom: var(--margin-xl);
+    }
+  }
+  form {
+    .personal-info {
+      margin-bottom: var(--margin-m);
+      .field-wrapper {
+        margin-bottom: var(--margin-xs);
+        &:last-child {
+          margin-bottom: 0;
+        }
+        label {
+          margin-right: var(--margin-xs);
+          width: calc(50% - var(--margin-xxs));
+          display: inline-block;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+        input {
+          margin-top: var(--margin-xxs);
+          padding: var(--margin-xxs) var(--margin-xs);
+          width: calc(100% - (var(--margin-xs) + #{$border-size}) * 2);
+          border: $border;
+          box-shadow: none;
+          border-radius: 0;
+          display: block;
+        }
+      }
+      .full-size-field {
+        label {
+          width: 100%;
+        }
+      }
+    }
+    .checkbox-wrapper {
+      margin-bottom: var(--margin-s);
+      &:last-child {
+        margin-bottom: var(--margin-xl);
+      }
+      input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+        margin: 0;
+        width: 0;
+        height: 0;
+      }
+      label {
+        line-height: 1.9;
+        position: relative;
+        display: inline-block;
+        padding-left: calc(var(--margin-xs) + var(--margin-xs));
+        &::before,
+        &::after {
+          position: absolute;
+          content: "";
+          display: inline-block;
+        }
+        &::before {
+          height: 16px;
+          width: 16px;
+          top: 7px;
+          left: 0;
+          border: $border;
+        }
+        &::after {
+          height: 5px;
+          width: 9px;
+          border-left: $border;
+          border-bottom: $border;
+          transform: rotate(-45deg);
+          left: 4.5px;
+          top: 11.5px;
+        }
+      }
+      input[type="checkbox"] + label::after {
+        content: none;
+      }
+      input[type="checkbox"]:checked + label::after {
+        content: "";
+      }
+      input[type="checkbox"]:focus + label::before {
+        outline: auto;
+      }
+    }
+  }
+  .registration-image {
+    justify-self: flex-end;
+    align-self: center;
+    max-height: 333px;
+    max-width: 400px;
+    width: 100%;
+  }
+  @media all and (max-width: 864px) {
+    .registration-image {
+      display: none;
+    }
+  }
+}
