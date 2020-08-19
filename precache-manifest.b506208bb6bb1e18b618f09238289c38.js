@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6a1daf1855ee34f6150a01a9c44193ee",
+    "revision": "55b9a9c2566f624f0475072eb77513e4",
     "url": "/bitad-frontend/index.html"
   },
   {
-    "revision": "8134b739b334e5367dc6",
-    "url": "/bitad-frontend/static/css/main.cdc66de6.chunk.css"
+    "revision": "af94a28f3d7e587c3fdd",
+    "url": "/bitad-frontend/static/css/main.35048d8e.chunk.css"
   },
   {
-    "revision": "c5f8437c903c49feef32",
-    "url": "/bitad-frontend/static/js/2.65647fc7.chunk.js"
+    "revision": "e5830e41eab815dda60d",
+    "url": "/bitad-frontend/static/js/2.5c022a2b.chunk.js"
   },
   {
     "revision": "eb56b19eba63a53416f4fd778023529f",
-    "url": "/bitad-frontend/static/js/2.65647fc7.chunk.js.LICENSE.txt"
+    "url": "/bitad-frontend/static/js/2.5c022a2b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8134b739b334e5367dc6",
-    "url": "/bitad-frontend/static/js/main.0f691db8.chunk.js"
+    "revision": "af94a28f3d7e587c3fdd",
+    "url": "/bitad-frontend/static/js/main.7fc1ee59.chunk.js"
   },
   {
     "revision": "75c82c76af4c8ae5c18f",
@@ -44,36 +44,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bitad-frontend/static/media/fb-logo.9dadae0b.svg"
   },
   {
-    "revision": "f9cd39f37fa36c2f7714363161a07b95",
-    "url": "/bitad-frontend/static/media/gray-bg.f9cd39f3.svg"
+    "revision": "1a1bac56966957e39a5eb9877e5a8440",
+    "url": "/bitad-frontend/static/media/gray-bg.1a1bac56.svg"
   },
   {
-    "revision": "fb549650ae95de10b7c75351575e6f7e",
-    "url": "/bitad-frontend/static/media/gray-white-bg.fb549650.svg"
+    "revision": "265cf09ee612b068eec9a437786814c0",
+    "url": "/bitad-frontend/static/media/gray-white-bg.265cf09e.svg"
   },
   {
-    "revision": "efdfc14935a9106605b8b90a2ea22b80",
-    "url": "/bitad-frontend/static/media/hero-bg.efdfc149.svg"
+    "revision": "679a9d330acb209221953ed8db148d76",
+    "url": "/bitad-frontend/static/media/hero-bg.679a9d33.svg"
   },
   {
     "revision": "4657918b9c4d46de74318d4ac37352e6",
     "url": "/bitad-frontend/static/media/lectures.4657918b.jpg"
   },
   {
-    "revision": "83b00af806e74f8174ce8c9430d15e49",
-    "url": "/bitad-frontend/static/media/neutral-bg.83b00af8.svg"
+    "revision": "a554fafefcca29308fde924c367b415c",
+    "url": "/bitad-frontend/static/media/neutral-bg.a554fafe.svg"
   },
   {
-    "revision": "07a0626d618b860c2f288eca836452b5",
-    "url": "/bitad-frontend/static/media/registration-bg1.07a0626d.svg"
+    "revision": "4dc76d52bbed7bcdcf13744c2ccc78ea",
+    "url": "/bitad-frontend/static/media/registration-bg1.4dc76d52.svg"
   },
   {
-    "revision": "1ab70094d83ab2d976190bd09dd2327d",
-    "url": "/bitad-frontend/static/media/reset-logo.1ab70094.svg"
+    "revision": "eeaaa63651042a62fa6eb4efe2c5ca57",
+    "url": "/bitad-frontend/static/media/reset-logo-red.eeaaa636.svg"
   },
   {
-    "revision": "ed5368d519b4d629f2fc1b5960dca3e6",
-    "url": "/bitad-frontend/static/media/small-hero-bg.ed5368d5.svg"
+    "revision": "27c4c782be264cb878f5c30c882903ba",
+    "url": "/bitad-frontend/static/media/small-hero-bg.27c4c782.svg"
   },
   {
     "revision": "92784b12992491f54103771b3c11b9bb",
