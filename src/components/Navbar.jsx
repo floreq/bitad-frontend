@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import ResetLogo from "./../assets/images/reset-logo.svg";
+import ResetLogo from "./../assets/images/reset-logo-red.svg";
 
 function Navbar() {
   const [ifOpen, setOpen] = useState(false);

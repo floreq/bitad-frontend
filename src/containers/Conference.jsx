@@ -37,134 +37,6 @@ function Conference() {
       fintOutMore: "/details#game",
     },
   ];
-  const listSponsors = [
-    {
-      categoryId: 1,
-      categoryTitle: "Diamentowi sponsorzy",
-      sponsors: [
-        {
-          id: 1,
-          image: "/images/sponsors/next.svg",
-          alt: "next",
-          link: "/",
-        },
-        {
-          id: 2,
-          image: "/images/sponsors/iteo.svg",
-          alt: "iteo",
-          link: "/",
-        },
-        {
-          id: 3,
-          image: "/images/sponsors/4experience.svg",
-          alt: "4experience",
-          link: "/",
-        },
-        {
-          id: 4,
-          image: "/images/sponsors/imgnpro.svg",
-          alt: "next",
-          link: "/",
-        },
-        {
-          id: 5,
-          image: "/images/sponsors/rekord.svg",
-          alt: "iteo",
-          link: "/",
-        },
-        {
-          id: 6,
-          image: "/images/sponsors/nav24.svg",
-          alt: "4experience",
-          link: "/",
-        },
-      ],
-    },
-    {
-      categoryId: 2,
-      categoryTitle: "Złoci sponsorzy",
-      sponsors: [
-        {
-          id: 1,
-          image: "/images/sponsors/rekord.svg",
-          alt: "rekord",
-          link: "/",
-        },
-        {
-          id: 2,
-          image: "/images/sponsors/nav24.svg",
-          alt: "nav24",
-          link: "/",
-        },
-        {
-          id: 3,
-          image: "/images/sponsors/imgnpro.svg",
-          alt: "rekord",
-          link: "/",
-        },
-        {
-          id: 4,
-          image: "/images/sponsors/4experience.svg",
-          alt: "nav24",
-          link: "/",
-        },
-        {
-          id: 5,
-          image: "/images/sponsors/next.svg",
-          alt: "rekord",
-          link: "/",
-        },
-        {
-          id: 6,
-          image: "/images/sponsors/nav24.svg",
-          alt: "nav24",
-          link: "/",
-        },
-      ],
-    },
-    {
-      categoryId: 3,
-      categoryTitle: "Srebrni sponsorzy",
-      sponsors: [
-        {
-          id: 1,
-          image: "/images/sponsors/imgnpro.svg",
-          alt: "imgnpro",
-          link: "/",
-        },
-        {
-          id: 2,
-          image: "/images/sponsors/helion.svg",
-          alt: "helion",
-          link: "/",
-        },
-        {
-          id: 3,
-          image: "/images/sponsors/nav24.svg",
-          alt: "imgnpro",
-          link: "/",
-        },
-        {
-          id: 4,
-          image: "/images/sponsors/4experience.svg",
-          alt: "helion",
-          link: "/",
-        },
-        {
-          id: 5,
-          image: "/images/sponsors/rekord.svg",
-          alt: "imgnpro",
-          link: "/",
-        },
-        {
-          id: 6,
-          image: "/images/sponsors/next.svg",
-          alt: "helion",
-          link: "/",
-        },
-      ],
-    },
-  ];
   const listOrganisers = [
     {
       id: 1,
@@ -228,7 +100,9 @@ function Conference() {
   const [organizers, setOrganizers] = useState([]);
   // Pull from API
   useEffect(() => {
-    fetch(process.env.REACT_APP_BACKEND + "wp-json/wp/v2/organizers")
+    fetch(
+      process.env.REACT_APP_BACKEND + "wp-json/wp/v2/organizers?per_page=100"
+    )
       .then((res) => res.json())
       .then(
         (result) => {
@@ -247,7 +121,7 @@ function Conference() {
   const [sponsors, setSponsors] = useState([]);
   // Pull from API
   useEffect(() => {
-    fetch(process.env.REACT_APP_BACKEND + "wp-json/wp/v2/sponsors")
+    fetch(process.env.REACT_APP_BACKEND + "wp-json/wp/v2/sponsors?per_page=100")
       .then((res) => res.json())
       .then(
         (result) => {
@@ -317,7 +191,6 @@ function Conference() {
           <div className="container two-columns reverse">
             <div>
               <ListOfSponsors
-                listSponsors={listSponsors}
                 sponsors={sponsors}
                 error={sponsorsError}
                 isLoaded={isSponsorsLoaded}

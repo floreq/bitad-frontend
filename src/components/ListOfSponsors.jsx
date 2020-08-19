@@ -35,7 +35,6 @@ function ListOfSponsors(props) {
       });
     });
   }
-  // const listSponsors = props.listSponsors;
   const sponsors = (categoryId) =>
     listSponsors[categoryId - 1].sponsors.map((e) => {
       return (
