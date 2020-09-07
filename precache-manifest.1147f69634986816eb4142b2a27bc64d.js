@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "55b9a9c2566f624f0475072eb77513e4",
+    "revision": "87c48b41ce175007199075a464878f3f",
     "url": "/bitad-frontend/index.html"
   },
   {
-    "revision": "af94a28f3d7e587c3fdd",
+    "revision": "f32ecc3db562b4dedacc",
     "url": "/bitad-frontend/static/css/main.35048d8e.chunk.css"
   },
   {
-    "revision": "e5830e41eab815dda60d",
-    "url": "/bitad-frontend/static/js/2.5c022a2b.chunk.js"
+    "revision": "9aa4158a7b34e4f7e8be",
+    "url": "/bitad-frontend/static/js/2.0aa8885a.chunk.js"
   },
   {
     "revision": "eb56b19eba63a53416f4fd778023529f",
-    "url": "/bitad-frontend/static/js/2.5c022a2b.chunk.js.LICENSE.txt"
+    "url": "/bitad-frontend/static/js/2.0aa8885a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "af94a28f3d7e587c3fdd",
-    "url": "/bitad-frontend/static/js/main.7fc1ee59.chunk.js"
+    "revision": "f32ecc3db562b4dedacc",
+    "url": "/bitad-frontend/static/js/main.b4cd76fd.chunk.js"
   },
   {
     "revision": "75c82c76af4c8ae5c18f",
